@@ -1,12 +1,35 @@
+a,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: black;
+  outline: none;
+}
+
 #error {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #error a {
-    padding-top: 1em;
-    color: black;
-    transition: .5s;
+  padding-top: 1em;
+  color: black;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
+
+#error a:hover {
+  color: lightskyblue;
+}
+/*# sourceMappingURL=style.css.map */

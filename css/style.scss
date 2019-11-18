@@ -1,0 +1,24 @@
+a,
+a:active,
+a:focus {
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+#error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#error a {
+    padding-top: 1em;
+    color: black;
+    transition: .5s;
+}
+
+#error a:hover {
+    color: lightskyblue;
+}
