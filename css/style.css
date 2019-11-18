@@ -1,0 +1,12 @@
+#error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#error a {
+    padding-top: 1em;
+    color: black;
+    transition: .5s;
+}
