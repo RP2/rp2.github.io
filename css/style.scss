@@ -1,24 +1,96 @@
-a,
-a:active,
-a:focus {
-    text-decoration: none;
-    color: black;
-    outline: none;
-}
+@import "./text";
+@import "./error";
 
-#error {
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+
+    & .across {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 35px;
+
+        & .remove {
+            @media screen and (max-width: 800px) {
+                display: none;
+            }
+        }
+    }
+
+    & #title {
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -35px;
+
+        & h1 {
+            font-size: 25vw;
+            position: absolute;
+        }
+
+        & .img {
+            height: 80%;
+            width: 60%;
+            background-image: url("../images/header/Self2.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+    }
 }
 
-#error a {
-    padding-top: 1em;
-    color: black;
-    transition: .5s;
-}
+about {
+    & .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 10em;
 
-#error a:hover {
-    color: lightskyblue;
+        & h1 {
+            padding: .1em;
+            transform: rotate(20deg);
+        }
+    }
+
+    & .blurb {
+        margin: 2em;
+
+        & p {
+            font-size: 7vw;
+            line-height: 1.5em;
+
+            @media screen and (max-width: 600px) {
+                font-size: 3em;
+            }
+        }
+    }
+
+    & .tellMeMore {
+        text-align: right;
+        font-size: 20vw;
+    }
+
+    & .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .paragraph {
+            margin: 1em;
+            max-width: 40em;
+
+            & p {
+                font-size: 1.5em;
+                line-height: 2.5em;
+            }
+        }
+    }
 }

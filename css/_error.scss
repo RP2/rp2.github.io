@@ -1,0 +1,22 @@
+#error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    background-color: white;
+    overflow: hidden;
+}
+
+#error a {
+    margin-top: 1em;
+    color: black;
+    transition: .5s;
+}
+
+#error a:hover {
+    color: lightskyblue;
+}
