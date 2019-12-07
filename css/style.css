@@ -119,8 +119,10 @@ header #title {
 }
 
 header #title h1 {
-  font-size: 25vw;
+  max-width: 100%;
+  font-size: 24vw;
   position: absolute;
+  word-wrap: break-word;
 }
 
 header #title .img {
@@ -130,6 +132,13 @@ header #title .img {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+  header #title .img {
+    background-attachment: scroll;
+  }
 }
 
 about .banner {
@@ -170,6 +179,8 @@ about .blurb p {
 about .tellMeMore {
   text-align: right;
   font-size: 20vw;
+  color: white;
+  background-color: black;
 }
 
 about .description {
