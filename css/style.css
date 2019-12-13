@@ -62,6 +62,21 @@ a:focus {
   color: lightskyblue;
 }
 
+#error h2 {
+  cursor: pointer;
+  margin: .5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#error h2:hover {
+  color: black;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;

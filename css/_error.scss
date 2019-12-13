@@ -9,14 +9,28 @@
     position: fixed;
     background-color: white;
     overflow: hidden;
-}
 
-#error a {
-    margin-top: 1em;
-    color: black;
-    transition: .5s;
-}
+    & a {
+        margin-top: 1em;
+        color: black;
+        transition: .5s;
+    }
 
-#error a:hover {
-    color: lightskyblue;
+    & a:hover {
+        color: lightskyblue;
+    }
+
+    & h2 {
+        cursor: pointer;
+        margin: .5em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+        transition: .5s;
+    }
+
+    & h2:hover {
+        color: black;
+    }
 }

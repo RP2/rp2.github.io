@@ -12,3 +12,8 @@ $(document).ready(function() {
         i++;
     }, 5000)
 })
+
+// close function
+$(".close").click(function(){
+    $("modal").fadeOut()
+})
