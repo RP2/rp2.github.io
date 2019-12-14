@@ -75,7 +75,7 @@ a:focus {
   position: absolute;
   top: 0;
   left: 0;
-  color: white;
+  color: #fafafa;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -271,6 +271,21 @@ work .project h3 {
   background-color: black;
   width: 100%;
   text-align: center;
+}
+
+work .project a {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 work .project:hover {
