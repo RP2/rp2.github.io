@@ -3,6 +3,8 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: black;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 h1 {
@@ -19,6 +21,11 @@ h3 {
 
 h4 {
   font-size: 1.5em;
+}
+
+.red, .blue, .green, .gold, .pink {
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 a,
@@ -219,5 +226,90 @@ about .description .paragraph {
 about .description .paragraph p {
   font-size: 1.5em;
   line-height: 2.5em;
+}
+
+work h1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+work .project {
+  width: 30em;
+  height: 30em;
+  margin: 1em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-style: solid;
+  border-width: .25em;
+  background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+  work .project {
+    width: 100%;
+    margin: 0em;
+  }
+}
+
+work .project h3 {
+  color: white;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+
+work .project:hover {
+  width: 100%;
+}
+
+work .code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+work .code #brutal {
+  background-image: url("../images/work/code/brutal.png");
+}
+
+work .code #shred {
+  background-image: url("../images/work/code/shred.png");
+}
+
+work .code #mulder {
+  background-image: url("../images/work/code/mulder.png");
+}
+
+work .code #primo {
+  background-image: url("../images/work/code/primo.png");
+}
+
+work .code #music {
+  background-image: url("../images/work/code/discover_music.png");
 }
 /*# sourceMappingURL=style.css.map */

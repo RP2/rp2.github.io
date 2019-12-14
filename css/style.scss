@@ -103,3 +103,71 @@ about {
         }
     }
 }
+
+work {
+    & h1 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    & .project {
+        width: 30em;
+        height: 30em;
+        margin: 1em;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        transition: .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: .25em;
+        background-color: black;
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            margin: 0em;
+        }
+
+        & h3 {
+            color: white;
+            background-color: black;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    & .project:hover {
+        width: 100%;
+    }
+
+    & .code {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & #brutal {
+            background-image: url("../images/work/code/brutal.png");
+        }
+
+        & #shred {
+            background-image: url("../images/work/code/shred.png");
+        }
+
+        & #mulder {
+            background-image: url("../images/work/code/mulder.png");
+        }
+
+        & #primo {
+            background-image: url("../images/work/code/primo.png");
+        }
+
+        & #music {
+            background-image: url("../images/work/code/discover_music.png");
+        }
+    }
+}
