@@ -41,3 +41,10 @@ $(window).scroll(function() {
         $(".pink").css("color", "pink");
     }
 });
+
+//design, show images
+
+$(".piece .hero").parent(this).click(function(){
+    $(this).find(".hidden").fadeIn().css("display","flex");
+    $('html, body').animate({scrollTop: $(this).find(".hidden").offset().top}, 1000)
+});

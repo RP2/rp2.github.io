@@ -60,6 +60,9 @@ about {
         align-items: center;
         overflow: hidden;
         height: 10em;
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: .25em;
 
         & h1 {
             padding: .1em;
@@ -177,6 +180,55 @@ work {
 
         & #music {
             background-image: url("../images/work/code/discover_music.png");
+        }
+    }
+
+    .design {
+        & .piece {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 1em;
+
+            & .hero {
+                background-image: url("../images/header/expand.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                & img {
+                    width: 100%;
+                    transition: .5s;
+                    cursor: pointer;
+                }
+                & img:hover {
+                    opacity: .75;
+                }
+            }
+
+            & .description {
+                margin: 1em;
+                max-width: 30em;
+            }
+        }
+
+        & .hidden {
+            display: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 1em;
+
+            & div {
+                width: 10em;
+                overflow: hidden;
+                margin: 1em;
+
+                & img {
+                    width: 100%;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

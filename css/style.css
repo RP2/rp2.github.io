@@ -175,6 +175,10 @@ about .banner {
           align-items: center;
   overflow: hidden;
   height: 10em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-style: solid;
+  border-width: .25em;
 }
 
 about .banner h1 {
@@ -326,5 +330,64 @@ work .code #primo {
 
 work .code #music {
   background-image: url("../images/work/code/discover_music.png");
+}
+
+work .design .piece {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1em;
+}
+
+work .design .piece .hero {
+  background-image: url("../images/header/expand.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+work .design .piece .hero img {
+  width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+work .design .piece .hero img:hover {
+  opacity: .75;
+}
+
+work .design .piece .description {
+  margin: 1em;
+  max-width: 30em;
+}
+
+work .design .hidden {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em;
+}
+
+work .design .hidden div {
+  width: 10em;
+  overflow: hidden;
+  margin: 1em;
+}
+
+work .design .hidden div img {
+  width: 100%;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
