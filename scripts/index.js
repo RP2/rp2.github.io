@@ -49,13 +49,11 @@ $(window).scroll(function() {
 // hero img hover
 
 $(".piece .hero").mouseenter(function(){
-    if ($(this).parent().find(".hidden").is(":visible")){
-
-    } else {
-        $(this).find("img").fadeTo(.5, .75);
+    if ($(this).parent().find(".hidden").css("opacity") == 0){
+        $(this).find("img").stop().fadeTo(.5, .75);
     };
     $(".piece .hero").mouseleave(function(){
-        $(this).find("img").fadeTo(.5, 1);
+        $(this).find("img").stop().fadeTo(.5, 1);
     })
 });
 
@@ -65,6 +63,7 @@ $(".piece .hero").click(function(){
     if ($(this).parent().find(".hidden").css("opacity") != 0){
         $(this).parent().find(".hidden").fadeTo(250,0).animate({"height":0});
     } else {
+        $(this).find("img").stop().fadeTo(.5, 1);
         $(this).parent().find(".hidden").fadeTo(250,1).css("height", "auto");
         $('html, body').animate({scrollTop: $(this).parent().find(".description").offset().top}, 500)
     }

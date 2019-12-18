@@ -202,6 +202,9 @@ work {
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
+                max-width: 30em;
+                max-height: 25em;
+                overflow: hidden;
 
                 & img {
                     width: 100%;
@@ -212,7 +215,7 @@ work {
 
             & .description {
                 margin: 1em;
-                max-width: 30em;
+                max-width: 35em;
             }
         }
 
@@ -243,4 +246,13 @@ work {
             }
         }
     }
+}
+
+contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    text-align: center;
 }
