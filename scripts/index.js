@@ -18,6 +18,8 @@ $(".close").click(function(){
     $("modal").fadeOut()
 })
 
+// colored text
+
 $(".red, .blue, .green, .gold, .pink").hover(function(){
     if ($(this).hasClass("gold")){
         $(this).css("color", "gold");
@@ -32,6 +34,8 @@ $(".red, .blue, .green, .gold, .pink").hover(function(){
     }
 })
 
+//after getting to work, change colors
+
 $(window).scroll(function() {
     if ( $(window).scrollTop() > $("work").offset().top){
         $(".gold").css("color", "gold");
@@ -42,9 +46,35 @@ $(window).scroll(function() {
     }
 });
 
+// hero img hover
+
+$(".piece .hero").mouseenter(function(){
+    if ($(this).parent().find(".hidden").is(":visible")){
+
+    } else {
+        $(this).find("img").fadeTo(.5, .75);
+    };
+    $(".piece .hero").mouseleave(function(){
+        $(this).find("img").fadeTo(.5, 1);
+    })
+});
+
 //design, show images
 
-$(".piece .hero").parent(this).click(function(){
-    $(this).find(".hidden").fadeIn().css("display","flex");
-    $('html, body').animate({scrollTop: $(this).find(".hidden").offset().top}, 1000)
+$(".piece .hero").click(function(){
+    if ($(this).parent().find(".hidden").css("opacity") != 0){
+        $(this).parent().find(".hidden").fadeTo(250,0).animate({"height":0});
+    } else {
+        $(this).parent().find(".hidden").fadeTo(250,1).css("height", "auto");
+        $('html, body').animate({scrollTop: $(this).parent().find(".description").offset().top}, 500)
+    }
+});
+
+// expand smaller image
+
+$(".hidden img").click(function(){
+    $('html, body').animate({scrollTop: $(this).parent().parent().parent().find(".hero").offset().top - 100}, 250)
+    let temp = $(this).parent().parent().parent().find(".hero img").attr("src")
+    $(this).parent().parent().parent().find(".hero img").attr("src", this.src);
+    $(this).attr("src", temp)
 });

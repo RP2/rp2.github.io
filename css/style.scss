@@ -183,7 +183,14 @@ work {
         }
     }
 
-    .design {
+    & #expanded {
+        display: none;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .design {
         & .piece {
             display: flex;
             justify-content: center;
@@ -201,9 +208,6 @@ work {
                     transition: .5s;
                     cursor: pointer;
                 }
-                & img:hover {
-                    opacity: .75;
-                }
             }
 
             & .description {
@@ -213,21 +217,29 @@ work {
         }
 
         & .hidden {
-            display: none;
+            display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             margin: 1em;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
 
             & div {
                 width: 10em;
                 overflow: hidden;
                 margin: 1em;
+                transition: .5s;
 
                 & img {
                     width: 100%;
                     cursor: pointer;
                 }
+            }
+
+            & div:hover{
+                transform: scale(1.1);
             }
         }
     }

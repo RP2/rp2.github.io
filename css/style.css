@@ -332,6 +332,17 @@ work .code #music {
   background-image: url("../images/work/code/discover_music.png");
 }
 
+work #expanded {
+  display: none;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 work .design .piece {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,17 +369,15 @@ work .design .piece .hero img {
   cursor: pointer;
 }
 
-work .design .piece .hero img:hover {
-  opacity: .75;
-}
-
 work .design .piece .description {
   margin: 1em;
   max-width: 30em;
 }
 
 work .design .hidden {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -378,16 +387,26 @@ work .design .hidden {
       -ms-flex-align: center;
           align-items: center;
   margin: 1em;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 work .design .hidden div {
   width: 10em;
   overflow: hidden;
   margin: 1em;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 work .design .hidden div img {
   width: 100%;
   cursor: pointer;
+}
+
+work .design .hidden div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */
