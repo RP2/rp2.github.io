@@ -192,6 +192,10 @@ work {
     }
 
     & .design {
+        & .top {
+            display: flex;
+            justify-content: center;
+        }
         & .piece {
             display: flex;
             justify-content: center;

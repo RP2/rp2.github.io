@@ -345,6 +345,15 @@ work #expanded {
           align-items: center;
 }
 
+work .design .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 work .design .piece {
   display: -webkit-box;
   display: -ms-flexbox;
