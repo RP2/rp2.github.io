@@ -198,10 +198,6 @@ work {
             flex-wrap: wrap;
         }
         & .piece {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            flex-wrap: wrap;
             margin: 1em;
 
             & .hero {
