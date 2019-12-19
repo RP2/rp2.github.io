@@ -1,5 +1,5 @@
 // title animation
-words = ["Dummy", "Dev", "Editor", "Human", "Creator", "Designer"]
+words = ["Dummy", "Dev", "Filmer", "Human", "Creator", "Designer"]
 $(document).ready(function() {
     let i = 0;
     setInterval (function() {

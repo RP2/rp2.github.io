@@ -133,6 +133,7 @@ work {
         @media screen and (max-width: 600px) {
             width: 100%;
             margin: 0em;
+            background-attachment: scroll;
         }
 
         & h3 {
@@ -241,7 +242,7 @@ work {
                 }
             }
 
-            & div:hover{
+            & div:hover {
                 transform: scale(1.1);
             }
         }
@@ -253,6 +254,28 @@ contact {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 80vh;
     text-align: center;
+}
+
+#bonus {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & h4 {
+        margin: 1em;
+    }
+
+    & a {
+        margin: .5em;
+        transition: .25s;
+    }
+
+    & a:hover {
+        color: grey;
+    }
 }
