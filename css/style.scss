@@ -2,12 +2,35 @@
 @import "./error";
 
 
+modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & h1 {
+        position: absolute;
+        margin: .5em;
+        top: 0;
+        left: 0;
+        color: white;
+        cursor: pointer;
+    }
+}
+
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     & .across {
+        position: sticky;
+        top: 0;
+        z-index: 100;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -198,6 +221,7 @@ work {
             justify-content: center;
             flex-wrap: wrap;
         }
+
         & .piece {
             margin: 1em;
 
