@@ -137,6 +137,14 @@ modal {
           align-items: center;
 }
 
+modal div {
+  height: 100vh;
+}
+
+modal div img {
+  width: 100%;
+}
+
 modal h1 {
   position: absolute;
   margin: .5em;
@@ -431,7 +439,7 @@ work .design .piece .hero {
   background-position: center;
   background-size: cover;
   max-width: 30em;
-  max-height: 25em;
+  max-height: 24em;
   overflow: hidden;
 }
 
