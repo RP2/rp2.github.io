@@ -98,3 +98,14 @@ $('a[href*="#"]')
       }
     }
   });
+
+  //toggle night mode
+
+  $("#toggle").click(function(){
+      $("body").css("background-color", "black");
+      $(".tellMeMore").css("background-color", "white");
+      $(".tellMeMore").css("color", "black");
+      $("body").css("color", "white");
+      $("a").css("color", "white");
+      $("#toggle").fadeOut();
+  })
