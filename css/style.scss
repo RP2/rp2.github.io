@@ -137,6 +137,29 @@ about {
             }
         }
     }
+
+    & #experience {
+        display: flex;
+        justify-content: space-around;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        & .column {
+            margin: 1em;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            & h3 {
+                margin: .25em;
+            }
+        }
+    }
 }
 
 work {
