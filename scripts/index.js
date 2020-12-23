@@ -42,6 +42,11 @@ $(window).scroll(function() {
         $(".green").css("color", "green");
         $(".pink").css("color", "pink");
     }
+    if ( $(window).scrollTop() > $("#about").offset().top){
+        $("#sideNav").fadeIn().css("display", "flex");
+    } else {
+        $("#sideNav").fadeOut();
+    }
 });
 
 // hero img hover

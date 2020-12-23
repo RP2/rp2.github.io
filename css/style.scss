@@ -110,6 +110,24 @@ about {
         }
     }
 
+    & #sideNav {
+        display: none;
+        justify-content: space-between;
+        flex-direction: column;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        height: 100vh;
+
+        & h3 {
+            margin-top: .5em;
+            margin-bottom: .5em;
+            writing-mode: vertical-rl;
+            text-orientation: sideways;
+            transform: rotate(180deg);
+        }
+    }
+
     & .blurb {
         margin: 2em;
 
@@ -322,6 +340,10 @@ contact {
     align-items: center;
     height: 100vh;
     text-align: center;
+
+    & h1 {
+        padding: .25em;
+    }
 }
 
 #bonus {

@@ -273,6 +273,32 @@ about .banner h1 {
           transform: rotate(20deg);
 }
 
+about #sideNav {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  height: 100vh;
+}
+
+about #sideNav h3 {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: sideways;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 about .blurb {
   margin: 2em;
 }
@@ -563,6 +589,10 @@ contact {
           align-items: center;
   height: 100vh;
   text-align: center;
+}
+
+contact h1 {
+  padding: .25em;
 }
 
 #bonus {
