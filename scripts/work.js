@@ -92,3 +92,15 @@ $("#workList li a").hover(function () {
             break;
     }
 });
+
+//show bigger image
+$("content img").click(function(){
+    console.log($(this).attr("src"))
+    $("modal").fadeIn().css("display","flex")
+    $("modal img").attr("src", $(this).attr("src"))
+})
+
+// close function
+$(".close").click(function () {
+    $("modal").fadeOut()
+})

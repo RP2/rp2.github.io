@@ -13,11 +13,6 @@ $(document).ready(function () {
     }, 5000)
 })
 
-// close function
-$(".close").click(function () {
-    $("modal").fadeOut()
-})
-
 // colored text
 $(".red, .blue, .green, .gold, .pink").hover(function () {
     if ($(this).hasClass("gold")) {
@@ -62,8 +57,6 @@ $(".piece .hero").mouseenter(function () {
 //design, show images
 $(".piece .hero").click(function () {
     if ($(this).parent().parent().find(".hidden").css("opacity") != 0) {
-        // $("modal").fadeIn().css("display","flex")
-        // $("modal img").attr("src", $(this).find("img").attr("src"))
         $(this).parent().parent().find(".hidden").fadeTo(250, 0).animate({ "height": 0 });
     } else {
         $(this).find("img").stop().fadeTo(.5, 1);
