@@ -1,0 +1,63 @@
+#filter {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1em;
+
+    & p {
+        cursor: pointer;
+        padding: .2em;
+    }
+}
+
+
+#list {
+    display: none;
+    margin-left: 2em;
+    position: absolute;
+
+    & p {
+        margin-top: 1em;
+
+        & a {
+            cursor: pointer;
+        }
+    }
+}
+
+#allWork {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & #preview {
+        z-index: -100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 80vh;
+        width: 50vw;
+
+        & .images {
+            width: 40vw;
+            position: fixed;
+            display: none;
+
+            & img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+
+    & #workList {
+        width: 50vw;
+
+        & li {
+            margin-top: .5em;
+            border-bottom: 1px solid black;
+
+        }
+
+    }
+}

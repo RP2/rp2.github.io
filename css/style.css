@@ -92,7 +92,7 @@ a.effect-underline:hover:after {
   width: 100%;
   z-index: 1000;
   position: fixed;
-  background-color: white;
+  background-color: #fbfbfb;
   overflow: hidden;
   text-align: center;
 }
@@ -121,6 +121,164 @@ a.effect-underline:hover:after {
 
 #error h2:hover {
   color: black;
+}
+
+#filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 1em;
+}
+
+#filter p {
+  cursor: pointer;
+  padding: .2em;
+}
+
+#list {
+  display: none;
+  margin-left: 2em;
+  position: absolute;
+}
+
+#list p {
+  margin-top: 1em;
+}
+
+#list p a {
+  cursor: pointer;
+}
+
+#allWork {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#allWork #preview {
+  z-index: -100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+  width: 50vw;
+}
+
+#allWork #preview .images {
+  width: 40vw;
+  position: fixed;
+  display: none;
+}
+
+#allWork #preview .images img {
+  height: auto;
+  width: 100%;
+}
+
+#allWork #workList {
+  width: 50vw;
+}
+
+#allWork #workList li {
+  margin-top: .5em;
+  border-bottom: 1px solid black;
+}
+
+content {
+  margin-top: 1em;
+  min-height: 90vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+content .hero {
+  width: 100vw;
+}
+
+content .hero img {
+  width: 100%;
+}
+
+content h3 {
+  margin-top: 1em;
+}
+
+content .paragraph {
+  width: 50vw;
+  margin: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  content .paragraph {
+    width: unset;
+  }
+}
+
+content .paragraph p {
+  text-indent: 2em;
+  letter-spacing: .05em;
+  line-height: 1.5;
+}
+
+content .images {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+content .images .image {
+  width: 65vw;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+content .images .image img {
+  height: auto;
+  width: 100%;
+}
+
+body {
+  background-color: #fbfbfb;
 }
 
 modal {
@@ -154,7 +312,7 @@ modal h1 {
   margin: .5em;
   top: 0;
   left: 0;
-  color: white;
+  color: #fbfbfb;
   cursor: pointer;
 }
 
@@ -317,7 +475,7 @@ about .blurb p {
 about .tellMeMore {
   text-align: right;
   font-size: 20vw;
-  color: white;
+  color: #fbfbfb;
   background-color: black;
 }
 
@@ -428,7 +586,7 @@ work .project {
 }
 
 work .project h3 {
-  color: white;
+  color: #fbfbfb;
   background-color: black;
   width: 100%;
   text-align: center;
@@ -470,23 +628,23 @@ work .code {
 }
 
 work .code #brutal {
-  background-image: url("../images/work/code/brutal.png");
+  background-image: url("../images/work/hidden/brutal/1.png");
 }
 
 work .code #shred {
-  background-image: url("../images/work/code/shred.png");
+  background-image: url("../images/work/hidden/shred/1.png");
 }
 
 work .code #mulder {
-  background-image: url("../images/work/code/mulder.png");
+  background-image: url("../images/work/hidden/mulder_design/1.png");
 }
 
 work .code #primo {
-  background-image: url("../images/work/code/primo.png");
+  background-image: url("../images/work/hidden/primo/1.png");
 }
 
 work .code #music {
-  background-image: url("../images/work/code/discover_music.png");
+  background-image: url("../images/work/hidden/discover_music/1.png");
 }
 
 work #expanded {
@@ -625,5 +783,12 @@ contact h1 {
 
 #bonus a:hover {
   color: grey;
+}
+
+.rotate {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: .25s;
+  transition: .25s;
 }
 /*# sourceMappingURL=style.css.map */

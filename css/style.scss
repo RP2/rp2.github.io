@@ -1,6 +1,11 @@
 @import "./text";
 @import "./error";
+@import "./work";
+@import "./project";
 
+body {
+    background-color: #fbfbfb;
+}
 
 modal {
     width: 100%;
@@ -25,7 +30,7 @@ modal {
         margin: .5em;
         top: 0;
         left: 0;
-        color: white;
+        color: #fbfbfb;
         cursor: pointer;
     }
 }
@@ -144,7 +149,7 @@ about {
     & .tellMeMore {
         text-align: right;
         font-size: 20vw;
-        color: white;
+        color: #fbfbfb;
         background-color: black;
     }
 
@@ -218,7 +223,7 @@ work {
         }
 
         & h3 {
-            color: white;
+            color: #fbfbfb;
             background-color: black;
             width: 100%;
             text-align: center;
@@ -245,23 +250,23 @@ work {
         align-items: center;
 
         & #brutal {
-            background-image: url("../images/work/code/brutal.png");
+            background-image: url("../images/work/hidden/brutal/1.png");
         }
 
         & #shred {
-            background-image: url("../images/work/code/shred.png");
+            background-image: url("../images/work/hidden/shred/1.png");
         }
 
         & #mulder {
-            background-image: url("../images/work/code/mulder.png");
+            background-image: url("../images/work/hidden/mulder_design/1.png");
         }
 
         & #primo {
-            background-image: url("../images/work/code/primo.png");
+            background-image: url("../images/work/hidden/primo/1.png");
         }
 
         & #music {
-            background-image: url("../images/work/code/discover_music.png");
+            background-image: url("../images/work/hidden/discover_music/1.png");
         }
     }
 
@@ -366,4 +371,9 @@ contact {
     & a:hover {
         color: grey;
     }
+}
+
+.rotate{
+    transform: rotate(45deg);
+    transition: .25s;
 }

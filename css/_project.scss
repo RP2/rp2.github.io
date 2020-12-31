@@ -1,0 +1,54 @@
+content {
+    margin-top: 1em;
+    min-height: 90vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+    & .hero {
+        width: 100vw;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    & h3 {
+        margin-top: 1em;
+    }
+
+    & .paragraph {
+        width: 50vw;
+        margin: 1em;
+
+        @media screen and (max-width: 800px) {
+            width: unset;
+        }
+
+        & p {
+            text-indent: 2em;
+            letter-spacing: .05em;
+            line-height: 1.5;
+        }
+    }
+
+    & .images {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & .image {
+            width: 65vw;
+            margin-top: 2em;
+            margin-bottom: 2em;
+
+            & img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+    }
+}
