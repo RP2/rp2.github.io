@@ -153,6 +153,17 @@ about {
         background-color: black;
     }
 
+
+    & #languages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & p {
+            margin: 1em;
+        }
+    }
+
     & .description {
         display: flex;
         flex-direction: column;
@@ -373,7 +384,7 @@ contact {
     }
 }
 
-.rotate{
+.rotate {
     transform: rotate(45deg);
     transition: .25s;
 }
