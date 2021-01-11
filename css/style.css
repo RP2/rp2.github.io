@@ -2,7 +2,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: black;
+  color: #7A5656;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -41,7 +41,7 @@ a,
 a:active,
 a:focus {
   text-decoration: none;
-  color: black;
+  color: #FBB0B0;
   outline: none;
 }
 
@@ -99,7 +99,7 @@ a.effect-underline:hover:after {
 
 #error a {
   margin-top: 1em;
-  color: black;
+  color: #7A5656;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -202,7 +202,7 @@ a.effect-underline:hover:after {
 
 #allWork #workList li {
   margin-top: .5em;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #7A7A7A;
 }
 
 content {
@@ -476,7 +476,7 @@ about .tellMeMore {
   text-align: right;
   font-size: 20vw;
   color: #fbfbfb;
-  background-color: black;
+  background-color: #7A5656;
 }
 
 about #languages {
@@ -488,6 +488,12 @@ about #languages {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  about #languages {
+    text-align: center;
+  }
 }
 
 about #languages p {
@@ -589,7 +595,7 @@ work .project {
           box-sizing: border-box;
   border-style: solid;
   border-width: .25em;
-  background-color: black;
+  background-color: #7A5656;
 }
 
 @media screen and (max-width: 600px) {
@@ -602,7 +608,7 @@ work .project {
 
 work .project h3 {
   color: #fbfbfb;
-  background-color: black;
+  background-color: #7A5656;
   width: 100%;
   text-align: center;
 }
