@@ -41,7 +41,7 @@ a,
 a:active,
 a:focus {
   text-decoration: none;
-  color: #FBB0B0;
+  color: #ff8888;
   outline: none;
 }
 
@@ -497,7 +497,9 @@ about #languages {
 }
 
 about #languages p {
-  margin: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
 }
 
 about .description {
@@ -752,6 +754,17 @@ work .design .hidden div:hover {
           transform: scale(1.1);
 }
 
+work .all-work {
+  text-align: center;
+  background-color: #ff5050;
+  margin-bottom: 0;
+  padding: 2em;
+}
+
+work .all-work a {
+  color: #fbfbfb;
+}
+
 contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -803,7 +816,7 @@ contact h1 {
 }
 
 #bonus a:hover {
-  color: grey;
+  color: #ff5050;
 }
 
 .rotate {
