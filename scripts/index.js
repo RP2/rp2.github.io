@@ -118,6 +118,6 @@ $(".project").click(function() {
 });
 
 // close function
-$(".no").click(function () {
+$(".no, .yes").click(function () {
     $("modal").fadeOut()
 })
