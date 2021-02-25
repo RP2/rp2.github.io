@@ -106,3 +106,18 @@ $("#toggle").click(function () {
     $("a").css("color", "white");
     $("#toggle").fadeOut();
 });
+
+// open link diologue
+$(".project").click(function() {
+    if (this.id == "shred"){
+        $("#warning-link").attr("href", "https://www.shredsf.com/")
+    } else if (this.id == "primo") {
+        $("#warning-link").attr("href", "https://www.primoangeli.com/")
+    }
+    $("modal").fadeIn().css("display","flex")
+});
+
+// close function
+$(".no").click(function () {
+    $("modal").fadeOut()
+})

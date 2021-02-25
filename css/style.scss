@@ -8,6 +8,7 @@ body {
 }
 
 modal {
+    z-index: 100;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -17,20 +18,42 @@ modal {
     justify-content: center;
     align-items: center;
 
+    & .warning {
+        display: flex;
+        flex-direction: column;
+
+        & h1 {
+            color: #fbfbfb;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        & .yn {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            & h2 {
+                cursor: pointer;
+            }
+        }
+    }
+
     & div {
-        max-width: 100vh;
+        max-width: 100vw;
 
         & img {
             width: 100%;
         }
     }
 
-    & h1 {
+    & .close {
         position: absolute;
-        margin: .5em;
+        margin-bottom: .5em;
+        margin-left: .5em;
         top: 0;
         left: 0;
-        color: #fbfbfb;
+        color: #ff8888;
         cursor: pointer;
     }
 }
@@ -217,6 +240,7 @@ work {
     }
 
     & .project {
+        cursor: pointer;
         width: 30em;
         height: 30em;
         margin: 1em;

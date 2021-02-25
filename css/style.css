@@ -282,6 +282,7 @@ body {
 }
 
 modal {
+  z-index: 100;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -299,20 +300,53 @@ modal {
           align-items: center;
 }
 
+modal .warning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+modal .warning h1 {
+  color: #fbfbfb;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+modal .warning .yn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+modal .warning .yn h2 {
+  cursor: pointer;
+}
+
 modal div {
-  max-width: 100vh;
+  max-width: 100vw;
 }
 
 modal div img {
   width: 100%;
 }
 
-modal h1 {
+modal .close {
   position: absolute;
-  margin: .5em;
+  margin-bottom: .5em;
+  margin-left: .5em;
   top: 0;
   left: 0;
-  color: #fbfbfb;
+  color: #ff8888;
   cursor: pointer;
 }
 
@@ -575,6 +609,7 @@ work h1 {
 }
 
 work .project {
+  cursor: pointer;
   width: 30em;
   height: 30em;
   margin: 1em;

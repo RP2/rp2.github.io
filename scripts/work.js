@@ -95,7 +95,6 @@ $("#workList li a").hover(function () {
 
 //show bigger image
 $("content img").click(function(){
-    console.log($(this).attr("src"))
     $("modal").fadeIn().css("display","flex")
     $("modal img").attr("src", $(this).attr("src"))
 })
