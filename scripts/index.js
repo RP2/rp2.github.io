@@ -113,6 +113,8 @@ $(".project").click(function() {
         $("#warning-link").attr("href", "https://www.shredsf.com/")
     } else if (this.id == "primo") {
         $("#warning-link").attr("href", "https://www.primoangeli.com/")
+    } else if (this.id == "mulder") {
+        $("#warning-link").attr("href", "http://www.mulderdesign.com/")
     }
     $("modal").fadeIn().css("display","flex")
 });
