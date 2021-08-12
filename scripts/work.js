@@ -1,4 +1,3 @@
-
 //expand filter
 function filter() {
     $("#close").toggleClass("rotate");
@@ -94,8 +93,8 @@ $("#workList li a").hover(function () {
 });
 
 //show bigger image
-$("content img").click(function(){
-    $("modal").fadeIn().css("display","flex")
+$("content img").click(function () {
+    $("modal").fadeIn().css("display", "flex")
     $("modal img").attr("src", $(this).attr("src"))
 })
 

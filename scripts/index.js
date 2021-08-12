@@ -57,17 +57,23 @@ $(".piece .hero").mouseenter(function () {
 //design, show images
 $(".piece .hero").click(function () {
     if ($(this).parent().parent().find(".hidden").css("opacity") != 0) {
-        $(this).parent().parent().find(".hidden").fadeTo(250, 0).animate({ "height": 0 });
+        $(this).parent().parent().find(".hidden").fadeTo(250, 0).animate({
+            "height": 0
+        });
     } else {
         $(this).find("img").stop().fadeTo(.5, 1);
         $(this).parent().parent().find(".hidden").fadeTo(250, 1).css("height", "auto");
-        $('html, body').animate({ scrollTop: $(this).parent().find(".description").offset().top }, 500)
+        $('html, body').animate({
+            scrollTop: $(this).parent().find(".description").offset().top
+        }, 500)
     }
 });
 
 // expand smaller image
 $(".hidden img").click(function () {
-    $('html, body').animate({ scrollTop: $(this).parent().parent().parent().find(".hero").offset().top - 100 }, 250)
+    $('html, body').animate({
+        scrollTop: $(this).parent().parent().parent().find(".hero").offset().top - 100
+    }, 250)
     let temp = $(this).parent().parent().parent().find(".hero img").attr("src")
     $(this).parent().parent().parent().find(".hero img").attr("src", this.src);
     $(this).attr("src", temp)
@@ -83,7 +89,9 @@ $('a[href*="#"]')
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
                 event.preventDefault();
-                $('html, body').animate({ scrollTop: target.offset().top }, 1000, function () {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000, function () {
                     var $target = $(target);
                     $target.focus();
                     if ($target.is(":focus")) {
@@ -108,15 +116,15 @@ $("#toggle").click(function () {
 });
 
 // open link diologue
-$(".project").click(function() {
-    if (this.id == "shred"){
+$(".project").click(function () {
+    if (this.id == "shred") {
         $("#warning-link").attr("href", "https://www.shredsf.com/")
     } else if (this.id == "primo") {
         $("#warning-link").attr("href", "https://www.primoangeli.com/")
     } else if (this.id == "mulder") {
         $("#warning-link").attr("href", "http://www.mulderdesign.com/")
     }
-    $("modal").fadeIn().css("display","flex")
+    $("modal").fadeIn().css("display", "flex")
 });
 
 // close function
