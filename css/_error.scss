@@ -7,18 +7,18 @@
     width: 100%;
     z-index: 1000;
     position: fixed;
-    background-color: #fbfbfb;
+    background-color: #F3FAFF;
     overflow: hidden;
     text-align: center;
 
     & a {
         margin-top: 1em;
-        color: #7A5656;
+        color: #3D3E40;
         transition: .5s;
     }
 
     & a:hover {
-        color: lightskyblue;
+        color: #797D80;
     }
 
     & h2 {

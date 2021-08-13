@@ -15,27 +15,13 @@ $(document).ready(function () {
 
 // colored text
 $(".red, .blue, .green, .gold, .pink").hover(function () {
-    if ($(this).hasClass("gold")) {
-        $(this).css("color", "gold");
-    } else if ($(this).hasClass("red")) {
-        $(this).css("color", "red");
-    } else if ($(this).hasClass("blue")) {
-        $(this).css("color", "blue");
-    } else if ($(this).hasClass("green")) {
-        $(this).css("color", "green");
-    } else if ($(this).hasClass("pink")) {
-        $(this).css("color", "pink");
-    }
+    $(this).css("color", "#B6BBBF");
 })
 
 //after getting to work, change colors
 $(window).scroll(function () {
     if ($(window).scrollTop() > $("work").offset().top) {
-        $(".gold").css("color", "gold");
-        $(".red").css("color", "red");
-        $(".blue").css("color", "blue");
-        $(".green").css("color", "green");
-        $(".pink").css("color", "pink");
+        $(".red, .blue, .green, .gold, .pink").css("color", "#B6BBBF");
     }
     if ($(window).scrollTop() > $("#about").offset().top) {
         $("#sideNav").fadeIn().css("display", "flex");
