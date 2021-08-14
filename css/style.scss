@@ -35,6 +35,10 @@ modal {
 
             & h2 {
                 cursor: pointer;
+
+                & a {
+                    color: white;
+                }
             }
         }
     }
