@@ -103,8 +103,8 @@ $("#toggle").click(function () {
 
 // open link diologue
 $(".project").click(function () {
-    if (this.id == "shred") {
-        $("#warning-link").attr("href", "https://www.shredsf.com/")
+    if (this.id == "rogue") {
+        $("#warning-link").attr("href", "https://www.rogueid.com/")
     } else if (this.id == "primo") {
         $("#warning-link").attr("href", "https://www.primoangeli.com/")
     } else if (this.id == "mulder") {
