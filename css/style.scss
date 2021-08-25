@@ -4,7 +4,7 @@
 @import "./project";
 
 body {
-    background-color: #F3FAFF;
+    background-image: linear-gradient(to bottom right, #66CCFF, #FFCCFF);
 }
 
 .container {
@@ -25,5 +25,8 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        & a {
+            color: #498EB3;
+        }
     }
 }

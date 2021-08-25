@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 1em;
+    color: #1A3340;
 
     & p {
         cursor: pointer;
@@ -56,8 +57,8 @@
 
         & li {
             margin-top: .5em;
-            border-bottom: 1px solid #3D3E40;
-
+            border-bottom: 1px solid #1A3340;
+            font-size: 1.25rem;
         }
 
     }

@@ -2,7 +2,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: #3D3E40;
+  color: #1A3340;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -41,7 +41,7 @@ a,
 a:active,
 a:focus {
   text-decoration: none;
-  color: #797D80;
+  color: #1A3340;
   outline: none;
 }
 
@@ -132,6 +132,7 @@ a.effect-underline:hover:after {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-left: 1em;
+  color: #1A3340;
 }
 
 #filter p {
@@ -203,7 +204,8 @@ a.effect-underline:hover:after {
 
 #allWork #workList li {
   margin-top: .5em;
-  border-bottom: 1px solid #3D3E40;
+  border-bottom: 1px solid #1A3340;
+  font-size: 1.25rem;
 }
 
 modal {
@@ -239,7 +241,7 @@ content {
 }
 
 content .hero {
-  width: 100vw;
+  width: 90vw;
 }
 
 content .hero img {
@@ -296,7 +298,8 @@ content .images .image img {
 }
 
 body {
-  background-color: #F3FAFF;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#66CCFF), to(#FFCCFF));
+  background-image: linear-gradient(to bottom right, #66CCFF, #FFCCFF);
 }
 
 .container {
@@ -325,5 +328,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.container footer a {
+  color: #498EB3;
 }
 /*# sourceMappingURL=style.css.map */
