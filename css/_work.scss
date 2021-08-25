@@ -62,3 +62,14 @@
 
     }
 }
+
+modal {
+    display: none;
+}
+
+.across {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem;
+}

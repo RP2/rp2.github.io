@@ -206,6 +206,23 @@ a.effect-underline:hover:after {
   border-bottom: 1px solid #3D3E40;
 }
 
+modal {
+  display: none;
+}
+
+.across {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1rem;
+}
+
 content {
   margin-top: 1em;
   min-height: 90vh;
