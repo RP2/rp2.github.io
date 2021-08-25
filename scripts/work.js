@@ -28,7 +28,6 @@ $("#workList").mouseenter(function () {
 });
 //scroll hides filter if expanded
 $(".container").scroll(function () {
-    console.log($(window).outerHeight())
     if ($("#filter #close").hasClass("rotate")) {
         resetFilter()
     }
@@ -53,9 +52,13 @@ $("#dev, #design, #video").click(function () {
         $(".video").fadeTo("fast", 1, "swing")
     }
 });
+//mobile
+$("#workList li a").on("touchstart touchend", function () {
+    
+});
 
 //show preview
-$("#workList li a").hover(function () {
+$("#workList li a").on("touchstart touchend mouseenter mouseleave",function () {
     switch (this.id) {
         case "brutal":
             $("#brutal-img").fadeToggle(75, "swing")
@@ -99,13 +102,13 @@ $("#workList li a").hover(function () {
     }
 });
 
-// //show bigger image
-// $("content img").click(function () {
-//     $("modal").fadeIn().css("display", "flex")
-//     $("modal img").attr("src", $(this).attr("src"))
-// })
+    // //show bigger image
+    // $("content img").click(function () {
+    //     $("modal").fadeIn().css("display", "flex")
+    //     $("modal img").attr("src", $(this).attr("src"))
+    // })
 
-// // close function
-// $(".close").click(function () {
-//     $("modal").fadeOut()
-// })
+    // // close function
+    // $(".close").click(function () {
+    //     $("modal").fadeOut()
+    // })
