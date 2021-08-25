@@ -198,6 +198,7 @@ a.effect-underline:hover:after {
 
 #allWork #workList {
   width: 50vw;
+  margin-right: 1rem;
 }
 
 #allWork #workList li {
@@ -806,6 +807,7 @@ contact {
           align-items: center;
   height: 100vh;
   text-align: center;
+  margin: 1rem;
 }
 
 contact h1 {
