@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Source+Code+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', sans-serif;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
 
 h1 {
+    font-family: 'Roboto', sans-serif;
     font-size: 3em;
     font-weight: bold;
 }
@@ -25,6 +27,7 @@ h4 {
 }
 
 p {
+    font-family: 'Roboto', sans-serif;
     line-height: 1.25;
 }
 

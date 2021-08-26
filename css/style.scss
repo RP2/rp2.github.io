@@ -1,6 +1,5 @@
 @import "./text";
 @import "./error";
-@import "./work";
 @import "./project";
 
 body {
@@ -41,16 +40,87 @@ body {
             }
         }
 
+        #list {
+            display: none;
+            margin-left: 2em;
+            position: absolute;
+
+            & p {
+                margin-top: 1em;
+
+                & a {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        #allWork {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            & #preview {
+                z-index: -100;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 80vh;
+                width: 50vw;
+
+                & .images {
+                    width: 40vw;
+                    position: fixed;
+                    display: none;
+
+                    & img {
+                        height: auto;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
         & #workList {
             width: 50vw;
             margin-right: 1rem;
 
             & li {
                 margin-top: .5em;
+                padding-bottom: .5rem;
                 border-bottom: 1px solid #1A3340;
                 font-size: 1.25rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
             }
 
+        }
+
+        & #down-arrow {
+            display: flex;
+            justify-content: center;
+            margin: 1rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
         }
     }
 
@@ -68,4 +138,15 @@ body {
             }
         }
     }
+}
+
+modal {
+    display: none;
+}
+
+.across {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem;
 }
