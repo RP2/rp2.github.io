@@ -55,7 +55,7 @@ $(".container").scroll(function () {
     if ($("#filter #close").hasClass("rotate")) {
         resetFilter()
     }
-})
+});
 //toggle filter opacity
 $("#dev, #design, #video").click(function () {
     if (this.id == "dev") {
@@ -75,15 +75,8 @@ $("#dev, #design, #video").click(function () {
         $(".video").fadeTo("fast", 1, "swing")
     }
 });
-//mobile
-$("#workList li a").on("touchstart touchend", function () {
-
-});
-
 //show preview
-$("#workList li a").on("touchstart mouseenter mouseleave", function () {
-    event.stopPropagation();
-    event.preventDefault();
+$("#workList li a").on("mouseenter mouseleave", function () {
     switch (this.id) {
         case "brutal":
             $("#brutal-img").fadeToggle(75, "swing")
