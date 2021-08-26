@@ -59,6 +59,8 @@ $("#workList li a").on("touchstart touchend", function () {
 
 //show preview
 $("#workList li a").on("touchstart touchend mouseenter mouseleave",function () {
+    event.stopPropagation();
+    event.preventDefault();
     switch (this.id) {
         case "brutal":
             $("#brutal-img").fadeToggle(75, "swing")
