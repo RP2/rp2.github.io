@@ -294,16 +294,10 @@ body a:focus {
   padding-bottom: .5rem;
   border-bottom: 1px solid #1A3340;
   font-size: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.container .section #workList li a {
+  display: block;
 }
 
 .container .section #down-arrow {
@@ -313,7 +307,7 @@ body a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 1rem;
+  margin-bottom: 1rem;
   -webkit-animation: bounce 2s infinite;
           animation: bounce 2s infinite;
 }
@@ -328,12 +322,12 @@ body a:focus {
             transform: translateY(0);
   }
   40% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
   }
   60% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+    -webkit-transform: translateY(0.25rem);
+            transform: translateY(0.25rem);
   }
 }
 
@@ -347,12 +341,12 @@ body a:focus {
             transform: translateY(0);
   }
   40% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
   }
   60% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+    -webkit-transform: translateY(0.25rem);
+            transform: translateY(0.25rem);
   }
 }
 

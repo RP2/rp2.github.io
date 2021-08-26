@@ -90,9 +90,10 @@ body {
                 padding-bottom: .5rem;
                 border-bottom: 1px solid #1A3340;
                 font-size: 1.25rem;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+                
+                & a {
+                    display: block;
+                }
             }
 
         }
@@ -100,7 +101,7 @@ body {
         & #down-arrow {
             display: flex;
             justify-content: center;
-            margin: 1rem;
+            margin-bottom: 1rem;
             animation: bounce 2s infinite;
         }
 
@@ -115,11 +116,11 @@ body {
             }
 
             40% {
-                transform: translateY(-30px);
+                transform: translateY(.5rem);
             }
 
             60% {
-                transform: translateY(-15px);
+                transform: translateY(.25rem);
             }
         }
     }
@@ -130,7 +131,6 @@ body {
         align-items: center;
 
         & contact {
-            // text-align: center;
             margin: 1rem;
 
             & a {
