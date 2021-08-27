@@ -199,7 +199,7 @@ content .images .image img {
   height: 100vh;
 }
 
-.container h1 {
+.container #title {
   padding: 1rem;
 }
 
@@ -418,7 +418,7 @@ modal {
 
 header {
   position: fixed;
-  width: 100vw;
+  width: calc(100vw - (100vw - 100%));
   bottom: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff00), to(#00000025));
   background-image: linear-gradient(top, #ffffff00, #00000025);
@@ -435,6 +435,6 @@ header .across {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 1rem;
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

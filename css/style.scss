@@ -7,7 +7,7 @@
     overflow-y: scroll;
     height: 100vh;
 
-    h1 {
+    #title {
         padding: 1rem;
     }
 
@@ -166,13 +166,14 @@ modal {
 
 header {
     position: fixed;
-    width: 100vw;
+    width: calc(100vw - (100vw - 100%));
     bottom: 0;
     background-image: linear-gradient(top, #ffffff00, #00000025);
+
     & .across {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 1rem;
+        padding: 1rem;
     }
 }
