@@ -11,7 +11,11 @@
         padding: 1rem;
     }
 
-    .section {
+    & .highlighted {
+        color: #808080;
+    }
+
+    & .section {
         min-height: 100vh;
         height: 100vh;
         max-height: 100vh;

@@ -203,6 +203,10 @@ content .images .image img {
   padding: 1rem;
 }
 
+.container .highlighted {
+  color: #808080;
+}
+
 .container .section {
   min-height: 100vh;
   height: 100vh;

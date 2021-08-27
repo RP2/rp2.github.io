@@ -58,21 +58,18 @@ $(".container").scroll(function () {
 });
 //toggle filter opacity
 $("#dev, #design, #video").click(function () {
+    $("#dev, #design, #video").fadeTo("slow", .5, "swing")
+    $(".dev, .design, .video").fadeTo("slow", .5, "swing")
     if (this.id == "dev") {
-        $("#dev").fadeTo("fast", 1, "swing")
-        $("#design, #video").fadeTo("fast", .5, "swing")
-        $(".dev").fadeTo("fast", 1, "swing")
-        $(".design, .video").fadeTo("fast", .5, "swing")
+        $("#dev").fadeTo("slow", 1, "swing")
+        $(".dev").fadeTo("slow", 1, "swing")
     } else if (this.id == "design") {
-        $("#dev, #video").fadeTo("fast", .5, "swing")
-        $("#design").fadeTo("fast", 1, "swing")
-        $(".dev, .video").fadeTo("fast", .5, "swing")
-        $(".design").fadeTo("fast", 1, "swing")
+        $("#design").fadeTo("slow", 1, "swing")
+        $(".design").fadeTo("slow", 1, "swing")
     } else if (this.id == "video") {
-        $("#dev, #design").fadeTo("fast", .5, "swing")
-        $("#video").fadeTo("fast", 1, "swing")
-        $(".dev, .design").fadeTo("fast", .5, "swing")
-        $(".video").fadeTo("fast", 1, "swing")
+
+        $("#video").fadeTo("slow", 1, "swing")
+        $(".video").fadeTo("slow", 1, "swing")
     }
 });
 //show preview
