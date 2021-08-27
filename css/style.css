@@ -5,6 +5,9 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  color: #404040;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffffff), to(#E6E6E6));
+  background-image: linear-gradient(to bottom right, #ffffff, #E6E6E6);
 }
 
 h1 {
@@ -26,16 +29,24 @@ h4 {
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
   line-height: 1.25;
 }
 
+a,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: #808080;
+  outline: none;
+}
+
 /*effect-underline*/
-a.effect-underline {
+a.effect-underline, p.effect-underline {
   position: relative;
 }
 
-a.effect-underline:after {
+a.effect-underline:after,
+p.effect-underline:after {
   content: '';
   position: absolute;
   left: 0;
@@ -53,7 +64,8 @@ a.effect-underline:after {
           transform: scale(0, 1);
 }
 
-a.effect-underline:hover:after {
+a.effect-underline:hover:after,
+p.effect-underline:hover:after {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -180,20 +192,6 @@ content .images .image img {
   width: 100%;
 }
 
-body {
-  color: #1A3340;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#66CCFF), to(#FFCCFF));
-  background-image: linear-gradient(to bottom right, #66CCFF, #FFCCFF);
-}
-
-body a,
-body a:active,
-body a:focus {
-  text-decoration: none;
-  color: #1A3340;
-  outline: none;
-}
-
 .container {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
@@ -201,12 +199,13 @@ body a:focus {
   height: 100vh;
 }
 
-.container header {
+.container h1 {
   padding: 1rem;
 }
 
 .container .section {
   min-height: 100vh;
+  height: 100vh;
   max-height: 100vh;
   overflow-y: scroll;
   scroll-snap-align: start;
@@ -221,7 +220,7 @@ body a:focus {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-left: 1em;
-  color: #1A3340;
+  color: #808080;
 }
 
 .container .section #filter p {
@@ -294,15 +293,22 @@ body a:focus {
 .container .section #workList li {
   margin-top: .5em;
   padding-bottom: .5rem;
-  border-bottom: 1px solid #1A3340;
+  border-bottom: 1px solid #808080;
   font-size: 1.25rem;
 }
 
 .container .section #workList li a {
   display: block;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.container .section #workList li a:hover {
+  opacity: 75%;
 }
 
 .container .section #down-arrow {
+  color: #404040;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,6 +358,44 @@ body a:focus {
   }
 }
 
+.container .big-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .big-text h3 {
+  margin: 1rem;
+}
+
+.container .big-text p {
+  max-width: 75vw;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  line-height: 2rem;
+}
+
+.container .big-text ul {
+  max-width: 75vw;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.container .big-text ul li {
+  line-height: 2rem;
+  list-style-type: disc;
+}
+
 .container footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,15 +412,19 @@ body a:focus {
   margin: 1rem;
 }
 
-.container footer contact a {
-  color: #498EB3;
-}
-
 modal {
   display: none;
 }
 
-.across {
+header {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff00), to(#00000025));
+  background-image: linear-gradient(top, #ffffff00, #00000025);
+}
+
+header .across {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,8 +432,9 @@ modal {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

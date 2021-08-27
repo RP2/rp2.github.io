@@ -2,30 +2,18 @@
 @import "./error";
 @import "./project";
 
-body {
-    color: #1A3340;
-    background-image: linear-gradient(to bottom right, #66CCFF, #FFCCFF);
-
-    a,
-    a:active,
-    a:focus {
-        text-decoration: none;
-        color: #1A3340;
-        outline: none;
-    }
-}
-
 .container {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
 
-    header {
+    h1 {
         padding: 1rem;
     }
 
     .section {
         min-height: 100vh;
+        height: 100vh;
         max-height: 100vh;
         overflow-y: scroll;
         scroll-snap-align: start;
@@ -34,7 +22,7 @@ body {
             display: flex;
             flex-direction: row;
             margin-left: 1em;
-            color: #1A3340;
+            color: #808080;
 
             & p {
                 cursor: pointer;
@@ -90,17 +78,22 @@ body {
             & li {
                 margin-top: .5em;
                 padding-bottom: .5rem;
-                border-bottom: 1px solid #1A3340;
+                border-bottom: 1px solid #808080;
                 font-size: 1.25rem;
-                
+
                 & a {
                     display: block;
+                    transition: .25s;
+                }
+
+                & a:hover {
+                    opacity: 75%;
                 }
             }
-
         }
 
         & #down-arrow {
+            color: #404040;
             display: flex;
             justify-content: center;
             margin-bottom: 1rem;
@@ -127,6 +120,35 @@ body {
         }
     }
 
+    .big-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & h3 {
+            margin: 1rem;
+        }
+
+        & p {
+            max-width: 75vw;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            line-height: 2rem;
+        }
+
+        & ul {
+            max-width: 75vw;
+            margin-left: 2rem;
+            margin-right: 2rem;
+
+            & li {
+                line-height: 2rem;
+                list-style-type: disc;
+            }
+        }
+    }
+
     footer {
         display: flex;
         justify-content: center;
@@ -134,10 +156,6 @@ body {
 
         & contact {
             margin: 1rem;
-
-            & a {
-                color: #498EB3;
-            }
         }
     }
 }
@@ -146,9 +164,15 @@ modal {
     display: none;
 }
 
-.across {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 1rem;
+header {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    background-image: linear-gradient(top, #ffffff00, #00000025);
+    & .across {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem;
+    }
 }
