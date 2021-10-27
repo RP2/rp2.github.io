@@ -197,6 +197,7 @@ content .images .image img {
       scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
+  overscroll-behavior-y: none;
 }
 
 .container #title {
@@ -254,9 +255,9 @@ content .images .image img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .container .section #allWork #preview {
@@ -440,5 +441,18 @@ header .across {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem;
+}
+
+@media (max-width: 700px) {
+  #title {
+    display: none;
+  }
+  #preview {
+    display: none !important;
+  }
+  #workList {
+    text-align: right;
+    margin-left: 1rem !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
