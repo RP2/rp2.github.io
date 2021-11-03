@@ -152,6 +152,12 @@
                 list-style-type: disc;
             }
         }
+        & .key-image {
+            display: none;
+            position: absolute;
+            width: 10rem;
+            z-index: -100;
+        }
     }
 
     footer {

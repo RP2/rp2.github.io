@@ -127,3 +127,14 @@ $("#workList li a").on("mouseenter mouseleave", function () {
 // $(".close").click(function () {
 //     $("modal").fadeOut()
 // })
+
+//hover key words image follows mouse
+$(".highlighted").on("mouseenter mouseleave", function () {
+    $(".key-image").fadeToggle(75, "swing")
+    $(document).mousemove(function (e) {
+        $(".key-image").css({
+            left: e.pageX,
+            top: e.pageY,
+        });
+    });
+});

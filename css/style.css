@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Source+Code+Pro:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 body {
+  cursor: default;
   font-family: 'Source Code Pro', sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -399,6 +400,13 @@ content .images .image img {
 .container .big-text ul li {
   line-height: 2rem;
   list-style-type: disc;
+}
+
+.container .big-text .key-image {
+  display: none;
+  position: absolute;
+  width: 10rem;
+  z-index: -100;
 }
 
 .container footer {
