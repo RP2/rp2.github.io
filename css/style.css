@@ -409,6 +409,19 @@ content .images .image img {
   z-index: -100;
 }
 
+.container glitch {
+  background-color: #404040;
+}
+
+.container glitch video {
+  max-height: 75vh;
+  margin: 1rem;
+}
+
+.container glitch #down-arrow {
+  color: #808080 !important;
+}
+
 .container footer {
   display: -webkit-box;
   display: -ms-flexbox;

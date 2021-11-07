@@ -152,6 +152,7 @@
                 list-style-type: disc;
             }
         }
+
         & .key-image {
             display: none;
             position: absolute;
@@ -159,6 +160,20 @@
             z-index: -100;
         }
     }
+
+    glitch {
+        background-color: #404040;
+
+        & video {
+            max-height: 75vh;
+            margin: 1rem;
+        }
+
+        & #down-arrow {
+            color: #808080 !important;
+        }
+    }
+
 
     footer {
         display: flex;
@@ -189,13 +204,15 @@ header {
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
     #title {
         display: none;
     }
+
     #preview {
         display: none !important;
     }
+
     #workList {
         text-align: right;
         // width: 100% !important;
