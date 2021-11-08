@@ -184,13 +184,19 @@ content .images {
 
 content .images .image {
   width: 65vw;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 content .images .image img {
   height: auto;
   width: 100%;
+}
+
+content .images video {
+  width: 65vw;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .container {
@@ -407,22 +413,6 @@ content .images .image img {
   position: absolute;
   width: 10rem;
   z-index: -100;
-}
-
-.container glitch {
-  background-color: #404040;
-}
-
-.container glitch a {
-  margin: 1rem;
-}
-
-.container glitch a video {
-  max-height: 75vh;
-}
-
-.container glitch #down-arrow {
-  color: #808080 !important;
 }
 
 .container footer {

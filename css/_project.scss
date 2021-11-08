@@ -41,14 +41,18 @@ content {
 
         & .image {
             width: 65vw;
-            margin-top: 2em;
-            margin-bottom: 2em;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
 
             & img {
                 height: auto;
                 width: 100%;
             }
         }
-
+        & video {
+            width: 65vw;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
     }
 }

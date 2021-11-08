@@ -161,24 +161,6 @@
         }
     }
 
-    glitch {
-        background-color: #404040;
-
-        & a {
-            margin: 1rem;
-
-            & video {
-                max-height: 75vh;
-            }
-        }
-
-
-        & #down-arrow {
-            color: #808080 !important;
-        }
-    }
-
-
     footer {
         display: flex;
         justify-content: center;
