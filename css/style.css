@@ -413,9 +413,12 @@ content .images .image img {
   background-color: #404040;
 }
 
-.container glitch video {
-  max-height: 75vh;
+.container glitch a {
   margin: 1rem;
+}
+
+.container glitch a video {
+  max-height: 75vh;
 }
 
 .container glitch #down-arrow {

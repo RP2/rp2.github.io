@@ -164,10 +164,14 @@
     glitch {
         background-color: #404040;
 
-        & video {
-            max-height: 75vh;
+        & a {
             margin: 1rem;
+
+            & video {
+                max-height: 75vh;
+            }
         }
+
 
         & #down-arrow {
             color: #808080 !important;
