@@ -1,61 +1,191 @@
-body,
-html {
-  overscroll-behavior: none;
-  background-color: #fff;
-  height: 100vh;
-  width: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;300;600&display=swap");
+body {
+  background-color: #000;
+  color: #fff;
+  height: 200vh;
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
 }
 
-main {
+body a,
+body a:active,
+body a:focus {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body nav {
   position: fixed;
-  width: 100%;
   height: 100vh;
-}
-
-.scrollable {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  will-change: transform;
-}
-
-.image-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  right: 0;
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body nav #logo {
+  margin: 1rem;
+  width: calc(1rem + 5vw);
+}
+
+body nav #logo img {
+  width: 100%;
+}
+
+body nav #links {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+body nav #links a {
+  margin: 1rem;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: sideways;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
-h1 {
+body header img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
-  left: 0;
-  top: 60%;
-  left: 55%;
-  z-index: 10;
-  color: #ffffff;
-  mix-blend-mode: difference;
 }
 
-img {
-  position: absolute;
-  height: 60%;
-  visibility: hidden;
+body header h1 {
+  font-weight: 600;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  color: #fff;
+  text-shadow: 0 0 1rem #fff;
+  font-size: calc(1rem + 15vw);
 }
 
-canvas {
-  position: fixed;
-  z-index: -10;
-  top: 0;
-  left: 0;
+body header #background {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+body header #middle {
+  -webkit-transform: translateZ(-1px) scale(2);
+          transform: translateZ(-1px) scale(2);
+}
+
+body header #title {
+  -webkit-transform: translateZ(-2px) scale(3);
+          transform: translateZ(-2px) scale(3);
+}
+
+body header #foreground {
+  -webkit-transform: translateZ(-3px) scale(4);
+          transform: translateZ(-3px) scale(4);
+}
+
+body header .flicker-slow {
+  -webkit-animation: flicker 3s linear infinite;
+          animation: flicker 3s linear infinite;
+}
+
+body header .flicker-fast {
+  -webkit-animation: flicker 1s linear infinite;
+          animation: flicker 1s linear infinite;
+}
+
+@-webkit-keyframes flicker {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    text-shadow: 0 0 1rem #fff;
+    opacity: .99;
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    text-shadow: 0 0 0 #fff;
+    opacity: .75;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    text-shadow: 0 0 1rem #fff;
+    opacity: .99;
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    text-shadow: 0 0 0 #fff;
+    opacity: .75;
+  }
+}
+
+body main {
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
