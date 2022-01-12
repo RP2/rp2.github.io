@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;300;600&display=swap");
 body {
-  background-color: #000;
+  background-color: #191919;
   color: #fff;
   height: 200vh;
   font-family: 'Sora', sans-serif;
@@ -100,6 +100,7 @@ body header img {
 }
 
 body header h1 {
+  line-height: calc(15rem + 5vh);
   font-weight: 600;
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -182,6 +183,105 @@ body header .flicker-fast {
   69.999% {
     text-shadow: 0 0 0 #fff;
     opacity: .75;
+  }
+}
+
+body #landing:after {
+  -webkit-animation: grain 8s steps(10) infinite;
+          animation: grain 8s steps(10) infinite;
+  background-image: url("../images/main/ernest-karchmit-grain.jpg");
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.1;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+}
+
+@-webkit-keyframes grain {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  10% {
+    -webkit-transform: translate(-5%, -10%);
+            transform: translate(-5%, -10%);
+  }
+  20% {
+    -webkit-transform: translate(-15%, 5%);
+            transform: translate(-15%, 5%);
+  }
+  30% {
+    -webkit-transform: translate(7%, -25%);
+            transform: translate(7%, -25%);
+  }
+  40% {
+    -webkit-transform: translate(-5%, 25%);
+            transform: translate(-5%, 25%);
+  }
+  50% {
+    -webkit-transform: translate(-15%, 10%);
+            transform: translate(-15%, 10%);
+  }
+  60% {
+    -webkit-transform: translate(15%, 0%);
+            transform: translate(15%, 0%);
+  }
+  70% {
+    -webkit-transform: translate(0%, 15%);
+            transform: translate(0%, 15%);
+  }
+  80% {
+    -webkit-transform: translate(3%, 35%);
+            transform: translate(3%, 35%);
+  }
+  90% {
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
+  }
+}
+
+@keyframes grain {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  10% {
+    -webkit-transform: translate(-5%, -10%);
+            transform: translate(-5%, -10%);
+  }
+  20% {
+    -webkit-transform: translate(-15%, 5%);
+            transform: translate(-15%, 5%);
+  }
+  30% {
+    -webkit-transform: translate(7%, -25%);
+            transform: translate(7%, -25%);
+  }
+  40% {
+    -webkit-transform: translate(-5%, 25%);
+            transform: translate(-5%, 25%);
+  }
+  50% {
+    -webkit-transform: translate(-15%, 10%);
+            transform: translate(-15%, 10%);
+  }
+  60% {
+    -webkit-transform: translate(15%, 0%);
+            transform: translate(15%, 0%);
+  }
+  70% {
+    -webkit-transform: translate(0%, 15%);
+            transform: translate(0%, 15%);
+  }
+  80% {
+    -webkit-transform: translate(3%, 35%);
+            transform: translate(3%, 35%);
+  }
+  90% {
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
   }
 }
 
