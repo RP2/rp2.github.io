@@ -42,10 +42,19 @@ body {
       flex: 1 1 auto;
 
       & a {
-        margin: 1rem;
+        margin: .5rem;
+        padding: .5rem;
         writing-mode: vertical-rl;
         text-orientation: sideways;
         transform: rotate(180deg);
+        transition: all .25s ease;
+      }
+
+      & a:hover,
+      a:active,
+      a:focus {
+        background-color: white;
+        color: rgb(25, 25, 25);
       }
     }
   }
@@ -140,19 +149,116 @@ body {
   }
 
   @keyframes grain {
-    0%, 100% { transform:translate(0, 0) }
-    10% { transform:translate(-5%, -10%) }
-    20% { transform:translate(-15%, 5%) }
-    30% { transform:translate(7%, -25%) }
-    40% { transform:translate(-5%, 25%) }
-    50% { transform:translate(-15%, 10%) }
-    60% { transform:translate(15%, 0%) }
-    70% { transform:translate(0%, 15%) }
-    80% { transform:translate(3%, 35%) }
-    90% { transform:translate(-10%, 10%) }
+
+    0%,
+    100% {
+      transform: translate(0, 0)
+    }
+
+    10% {
+      transform: translate(-5%, -10%)
+    }
+
+    20% {
+      transform: translate(-15%, 5%)
+    }
+
+    30% {
+      transform: translate(7%, -25%)
+    }
+
+    40% {
+      transform: translate(-5%, 25%)
+    }
+
+    50% {
+      transform: translate(-15%, 10%)
+    }
+
+    60% {
+      transform: translate(15%, 0%)
+    }
+
+    70% {
+      transform: translate(0%, 15%)
+    }
+
+    80% {
+      transform: translate(3%, 35%)
+    }
+
+    90% {
+      transform: translate(-10%, 10%)
+    }
+  }
+
+  & #blurb {
+    min-height: 100vh;
+    margin: 2rem 25vw 4rem 2rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+
+    & h2 {
+      cursor: default;
+      margin-top: 2rem;
+      font-size: calc(2rem + 2vw);
+      line-height: calc(100% + 5vh);
+
+      & span {
+        cursor: pointer;
+        font-weight: bold;
+        transition: all .5s ease;
+      }
+
+      & span:hover,
+      span:active,
+      span:focus {
+        background-color: white;
+        color: rgb(25, 25, 25);
+      }
+    }
   }
 
   & main {
+    min-height: 100vh;
     height: 100vh;
+
+    & h3 {
+      text-align: right;
+      margin-right: 10vw;
+      font-size: calc(2rem + 4vw);
+    }
+
+    & .review {
+      display: flex;
+      flex-direction: column;
+      min-height: calc(2rem + 75vh);
+      margin: 2rem 25vw 0 3rem;
+
+      & .content {
+        border-bottom: solid 5px rgb(25, 25, 25);
+        height: 20rem;
+        width: 100%;
+        flex: 1;
+        background-image: var(--i);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all .5s ease;
+        filter: grayscale(.75);
+      }
+
+      & .content:hover,
+      .content:focus,
+      .content:active {
+        flex: 15;
+        background-size: cover;
+        filter: grayscale(.25);
+      }
+    }
   }
 }

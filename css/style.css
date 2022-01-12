@@ -64,13 +64,23 @@ body nav #links {
 }
 
 body nav #links a {
-  margin: 1rem;
+  margin: .5rem;
+  padding: .5rem;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: sideways;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+body nav #links a:hover,
+body nav #links a:active,
+body nav #links a:focus {
+  background-color: white;
+  color: #191919;
 }
 
 body header {
@@ -200,7 +210,8 @@ body #landing:after {
 }
 
 @-webkit-keyframes grain {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
@@ -243,7 +254,8 @@ body #landing:after {
 }
 
 @keyframes grain {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
@@ -285,7 +297,95 @@ body #landing:after {
   }
 }
 
+body #blurb {
+  min-height: 100vh;
+  margin: 2rem 25vw 4rem 2rem;
+  padding-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #fff;
+}
+
+body #blurb h2 {
+  cursor: default;
+  margin-top: 2rem;
+  font-size: calc(2rem + 2vw);
+  line-height: calc(100% + 5vh);
+}
+
+body #blurb h2 span {
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+body #blurb h2 span:hover,
+body #blurb h2 span:active,
+body #blurb h2 span:focus {
+  background-color: white;
+  color: #191919;
+}
+
 body main {
+  min-height: 100vh;
   height: 100vh;
+}
+
+body main h3 {
+  text-align: right;
+  margin-right: 10vw;
+  font-size: calc(2rem + 4vw);
+}
+
+body main .review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: calc(2rem + 75vh);
+  margin: 2rem 25vw 0 3rem;
+}
+
+body main .review .content {
+  border-bottom: solid 5px #191919;
+  height: 20rem;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-image: var(--i);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-filter: grayscale(0.75);
+          filter: grayscale(0.75);
+}
+
+body main .review .content:hover,
+body main .review .content:focus,
+body main .review .content:active {
+  -webkit-box-flex: 15;
+      -ms-flex: 15;
+          flex: 15;
+  background-size: cover;
+  -webkit-filter: grayscale(0.25);
+          filter: grayscale(0.25);
 }
 /*# sourceMappingURL=style.css.map */
