@@ -297,7 +297,7 @@ body #landing:after {
   }
 }
 
-body #blurb {
+body #about {
   min-height: 100vh;
   margin: 2rem 25vw 4rem 2rem;
   padding-bottom: 4rem;
@@ -317,36 +317,42 @@ body #blurb {
   border-bottom: 1px solid #fff;
 }
 
-body #blurb h2 {
+body #about h2 {
   cursor: default;
   margin-top: 2rem;
   font-size: calc(2rem + 2vw);
   line-height: calc(100% + 5vh);
 }
 
-body #blurb h2 span {
+body #about h2 span {
   cursor: pointer;
   font-weight: bold;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
-body #blurb h2 span:hover,
-body #blurb h2 span:active,
-body #blurb h2 span:focus {
+body #about h2 span:hover,
+body #about h2 span:active,
+body #about h2 span:focus {
   background-color: white;
   color: #191919;
 }
 
 body main {
   min-height: 100vh;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body main h3 {
+  cursor: default;
   text-align: right;
   margin-right: 10vw;
   font-size: calc(2rem + 4vw);
+}
+
+body main p {
+  cursor: default;
+  margin: 2rem 0 1rem 3rem;
 }
 
 body main .review {
@@ -358,7 +364,7 @@ body main .review {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: calc(2rem + 75vh);
-  margin: 2rem 25vw 0 3rem;
+  margin: 0 25vw 0 3rem;
 }
 
 body main .review .content {
@@ -384,8 +390,107 @@ body main .review .content:active {
   -webkit-box-flex: 15;
       -ms-flex: 15;
           flex: 15;
-  background-size: cover;
   -webkit-filter: grayscale(0.25);
           filter: grayscale(0.25);
+}
+
+body main #old-logo {
+  margin: 0 25vw 0 3rem;
+  padding: 0 1rem 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-filter: grayscale(0.75);
+          filter: grayscale(0.75);
+}
+
+body main #old-logo img {
+  max-width: 100%;
+}
+
+body main #old-logo:hover,
+body main #old-logo:active,
+body main #old-logo:focus {
+  -webkit-filter: grayscale(0.25);
+          filter: grayscale(0.25);
+}
+
+body main #new-logo {
+  margin: 0 25vw 0 3rem;
+  padding: 0 1rem 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50vh;
+}
+
+body main #new-logo img {
+  max-width: 100%;
+}
+
+body main #new-remp-web {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body main #new-remp-web .content {
+  border-right: solid 5px #191919;
+  height: 75vh;
+}
+
+body main .paragraph {
+  cursor: default;
+  margin: 1rem 25vw 1rem 3rem;
+  line-height: 1.5rem;
+}
+
+body main .paragraph span {
+  font-weight: 600;
+}
+
+body main .paragraph p {
+  margin: 0;
+}
+
+body main .paragraph a {
+  text-decoration: underline;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+body main .paragraph a:hover,
+body main .paragraph a:active,
+body main .paragraph a:focus {
+  background-color: white;
+  color: #191919;
+}
+
+body main #end-of-remp {
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #fff;
+}
+
+body #contact {
+  margin: 0 25vw 0 3rem;
+  min-height: 25vh;
+}
+
+body #contact a:hover,
+body #contact a:active,
+body #contact a:focus {
+  background-color: white;
+  color: #191919;
 }
 /*# sourceMappingURL=style.css.map */

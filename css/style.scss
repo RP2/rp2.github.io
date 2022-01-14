@@ -192,7 +192,7 @@ body {
     }
   }
 
-  & #blurb {
+  & #about {
     min-height: 100vh;
     margin: 2rem 25vw 4rem 2rem;
     padding-bottom: 4rem;
@@ -225,19 +225,26 @@ body {
 
   & main {
     min-height: 100vh;
-    height: 100vh;
+    min-height: 100vh;
 
     & h3 {
+      cursor: default;
       text-align: right;
       margin-right: 10vw;
       font-size: calc(2rem + 4vw);
+    }
+
+    & p {
+      cursor: default;
+      margin: 2rem 0 1rem 3rem;
     }
 
     & .review {
       display: flex;
       flex-direction: column;
       min-height: calc(2rem + 75vh);
-      margin: 2rem 25vw 0 3rem;
+      margin: 0 25vw 0 3rem;
+
 
       & .content {
         border-bottom: solid 5px rgb(25, 25, 25);
@@ -256,9 +263,93 @@ body {
       .content:focus,
       .content:active {
         flex: 15;
-        background-size: cover;
         filter: grayscale(.25);
       }
+    }
+
+    & #old-logo {
+      margin: 0 25vw 0 3rem;
+      padding: 0 1rem 1rem 1rem;
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
+      transition: all .5s ease;
+      filter: grayscale(.75);
+
+      & img {
+        max-width: 100%;
+      }
+    }
+
+    & #old-logo:hover,
+    #old-logo:active,
+    #old-logo:focus {
+      filter: grayscale(.25);
+    }
+
+    & #new-logo {
+      margin: 0 25vw 0 3rem;
+      padding: 0 1rem 1rem 1rem;
+      display: flex;
+      justify-content: center;
+      height: 50vh;
+
+      & img {
+        max-width: 100%;
+      }
+    }
+
+    & #new-remp-web {
+      flex-direction: row;
+
+      & .content {
+        border-right: solid 5px rgb(25, 25, 25);
+        height: 75vh;
+      }
+    }
+
+    & .paragraph {
+      cursor: default;
+      margin: 1rem 25vw 1rem 3rem;
+      line-height: 1.5rem;
+
+      & span {
+        font-weight: 600;
+      }
+
+      & p {
+        margin: 0;
+      }
+
+      & a {
+        text-decoration: underline;
+        transition: .25s;
+      }
+
+      & a:hover,
+      a:active,
+      a:focus {
+        background-color: white;
+        color: rgb(25, 25, 25);
+      }
+    }
+
+    & #end-of-remp {
+      padding-bottom: 4rem;
+      margin-bottom: 4rem;
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  & #contact {
+    margin: 0 25vw 0 3rem;
+    min-height: 25vh;
+
+    & a:hover,
+    a:active,
+    a:focus {
+      background-color: white;
+      color: rgb(25, 25, 25);
     }
   }
 }
