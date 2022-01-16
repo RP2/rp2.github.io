@@ -193,6 +193,7 @@ body {
   }
 
   & #about {
+    overflow: hidden;
     min-height: 100vh;
     margin: 2rem 25vw 4rem 2rem;
     padding-bottom: 4rem;
@@ -219,6 +220,20 @@ body {
       span:focus {
         background-color: white;
         color: rgb(25, 25, 25);
+      }
+    }
+
+    & #about-video {
+      display: none;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+
+      & source {
+        max-width: 100%;
       }
     }
   }
@@ -289,7 +304,18 @@ body {
 
     & #new-logo {
       margin: 0 25vw 0 3rem;
-      padding: 0 1rem 1rem 1rem;
+      padding: 0 0 1rem 0;
+      display: flex;
+      justify-content: center;
+      height: 50vh;
+
+      & img {
+        max-width: 100%;
+      }
+    }
+
+    & #new-business-cards {
+      margin: 0 25vw 0 3rem;
       display: flex;
       justify-content: center;
       height: 50vh;

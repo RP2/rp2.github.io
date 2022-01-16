@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="riley, website, design, graphic, frontend, developer, bay area, english, freelance">
-    <meta name="description" content="Riley's motto : Keep it simple. - Freelance web design & developer.">
+    <meta name="description"
+        content="A jack of all trades is a master of none, but better than a master of one - Freelance web design & developer.">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -18,9 +19,9 @@
 
 <body>
     <nav>
-        <figure id="logo">
-            <a href="#landing"><img src="./images/main/Self2.png" /></a>
-        </figure>
+        <div id="logo">
+            <a href="#landing"><img alt="my-logo" src="./images/main/Self2.png" /></a>
+        </div>
         <div id="links">
             <a href="#about">ABOUT</a>
             <a href="#work">WORK</a>
@@ -28,15 +29,18 @@
         </div>
     </nav>
     <header id="landing">
-        <img id="background" src="./images/main/hans-eiskonen-background.jpg" />
-        <img id="middle" src="./images/main/hans-eiskonen-mid.png" />
+        <img alt="back" id="background" src="./images/main/hans-eiskonen-background.jpg" />
+        <img alt="middle" id="middle" src="./images/main/hans-eiskonen-mid.png" />
         <h1 id="title"><span class="flicker-slow">K</span>EEP IT SIMP<span class="flicker-fast">L</span>E.</h1>
-        <img id="foreground" src="./images/main/hans-eiskonen-front.png" />
+        <img alt="front" id="foreground" src="./images/main/hans-eiskonen-front.png" />
     </header>
     <section id="about">
         <h2><span id="riley">Riley</span> is an independent visual designer, developer, and project manager based in
             the <span id="bay-area">San Francisco Bay Area.</span></h2>
         <h2>In simple terms - I can run an agency alone, or make yours that much better.</h2>
+        <video id="about-video" autoplay muted loop>
+            <source src="./images/main/sf.mp4" type="video/mp4">
+        </video>
     </section>
     <main id="work">
         <h3>REMP REDO</h3>
@@ -54,13 +58,13 @@
                 not age gracefully. Some mentionable choices are large bodies of text, drop down menus, and pages only
                 containing one paragraph. Along with many design and functional issues, a 3rd party was managing the
                 site which only complicated things more. The combination of these issues made it obvious that the
-                website needed to be rebuilt and be kept completely internal. The new website was completely design and
+                website needed to be rebuilt and be kept completely internal. The new website was completely designed and
                 coded by myself and I believe it addresses all of the concerns with the old site as well as give a
                 better sense of what the client stands for.</p>
         </div>
         <p>BEFORE - OLD LOGO</p>
         <div id="old-logo">
-            <img src="./images/work/remp-web/old-remp-logo.jpg" />
+            <img alt="re&m-old-logo" src="./images/work/remp-web/old-remp-logo.jpg" />
         </div>
         <div class="paragraph">
             <p>The <span>old logo</span> also had some issues, primarily it needed to be updated to accommodate the new
@@ -72,7 +76,7 @@
         </div>
         <p>AFTER - NEW LOGO</p>
         <div id="new-logo">
-            <img src="./images/work/remp-web/new-remp-logo.svg" />
+            <img alt="new-remp-logo" src="./images/work/remp-web/new-remp-logo.svg" />
         </div>
         <div class="paragraph">
             <p>The <span>new logo</span> I feel captures the energy the firm has in a more accurate way than previous
@@ -84,6 +88,10 @@
                 case was the best choice. This also allowed for more customization for the partners, with the logo as a
                 neutral color, this allows each partner to have their own identity within the firm; this can be seen on
                 the new website as well as business cards.</p>
+        </div>
+        <p>AFTER - NEW BUSINESS CARDS</p>
+        <div id="new-business-cards">
+            <img alt="business cards" src="./images/work/remp-web/spinning-card.gif" />
         </div>
         <p>AFTER - NEW WEBSITE</p>
         <div id="new-remp-web" class="review">

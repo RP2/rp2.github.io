@@ -298,6 +298,7 @@ body #landing:after {
 }
 
 body #about {
+  overflow: hidden;
   min-height: 100vh;
   margin: 2rem 25vw 4rem 2rem;
   padding-bottom: 4rem;
@@ -336,6 +337,20 @@ body #about h2 span:active,
 body #about h2 span:focus {
   background-color: white;
   color: #191919;
+}
+
+body #about #about-video {
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+body #about #about-video source {
+  max-width: 100%;
 }
 
 body main {
@@ -423,7 +438,7 @@ body main #old-logo:focus {
 
 body main #new-logo {
   margin: 0 25vw 0 3rem;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 0 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,6 +449,21 @@ body main #new-logo {
 }
 
 body main #new-logo img {
+  max-width: 100%;
+}
+
+body main #new-business-cards {
+  margin: 0 25vw 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50vh;
+}
+
+body main #new-business-cards img {
   max-width: 100%;
 }
 

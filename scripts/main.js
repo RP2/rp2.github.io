@@ -15,6 +15,11 @@ $(window).scroll(function () {
     });
 });
 
+//about hover video background
+$("#riley, #bay-area").hover(function(){
+	$("#about-video").fadeToggle("slow")
+});
+
 // click link with hash scrolls to div with matching id
 $('a[href*="#"]')
 	.not('[href="#"]')
