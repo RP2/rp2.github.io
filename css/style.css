@@ -112,6 +112,7 @@ body header img {
 }
 
 body header h1 {
+  position: relative;
   line-height: calc(15rem + 5vh);
   font-weight: 600;
   width: -webkit-min-content;
@@ -122,8 +123,16 @@ body header h1 {
   font-size: calc(1rem + 15vw);
 }
 
-body header #title {
-  position: relative;
+body header #background,
+body header #middle,
+body header #title,
+body header #foreground {
+  -webkit-animation: balloon 15s infinite linear;
+          animation: balloon 15s infinite linear;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-transition: .1s;
+  transition: .1s;
 }
 
 body header .flicker-slow {

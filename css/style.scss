@@ -79,6 +79,7 @@ body {
     }
 
     & h1 {
+      position: relative;
       line-height: calc(15rem + 5vh);
       font-weight: 600;
       width: min-content;
@@ -87,22 +88,14 @@ body {
       font-size: calc(1rem + 15vw);
     }
 
-    // & #background {
-    //   transform: translateZ(0);
-    // }
-
-    // & #middle {
-    //   transform: translateZ(0px) scale(2);
-    // }
-
-    & #title {
-      position: relative;
-      // transform: translateZ(0px) ;
+    & #background,
+    #middle,
+    #title,
+    #foreground {
+      animation: balloon 15s infinite linear;
+      transform: translate(0);
+      transition: .1s;
     }
-
-    // & #foreground {
-    //   transform: translateZ(0px) scale(4);
-    // }
 
     .flicker-slow {
       animation: flicker 3s linear infinite;
