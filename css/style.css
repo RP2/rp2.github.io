@@ -98,6 +98,8 @@ body header {
   width: 100vw;
   min-height: 100vh;
   overflow: hidden;
+  position: relative;
+  z-index: -1;
   -webkit-overflow-scrolling: touch;
 }
 
