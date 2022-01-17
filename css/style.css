@@ -98,6 +98,7 @@ body header {
   width: 100vw;
   min-height: 100vh;
   overflow: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 body header img {
@@ -117,6 +118,10 @@ body header h1 {
   color: #fff;
   text-shadow: 0 0 1rem #fff;
   font-size: calc(1rem + 15vw);
+}
+
+body header #title {
+  position: relative;
 }
 
 body header .flicker-slow {

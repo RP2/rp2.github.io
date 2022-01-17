@@ -67,7 +67,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     overflow: hidden;
-    // -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
 
     & img {
       width: 100%;
@@ -93,9 +93,10 @@ body {
     //   transform: translateZ(0px) scale(2);
     // }
 
-    // & #title {
-    //   transform: translateZ(0px) scale(3);
-    // }
+    & #title {
+      position: relative;
+      // transform: translateZ(0px) ;
+    }
 
     // & #foreground {
     //   transform: translateZ(0px) scale(4);
