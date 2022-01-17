@@ -371,6 +371,10 @@ body {
     margin: 0 25vw 0 3rem;
     min-height: 25vh;
 
+    & a {
+      transition: .25s;
+    }
+
     & a:hover,
     a:active,
     a:focus {

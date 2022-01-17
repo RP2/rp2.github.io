@@ -517,6 +517,11 @@ body #contact {
   min-height: 25vh;
 }
 
+body #contact a {
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
 body #contact a:hover,
 body #contact a:active,
 body #contact a:focus {
