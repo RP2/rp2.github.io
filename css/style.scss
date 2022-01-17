@@ -69,7 +69,7 @@ body {
     overflow: hidden;
     position: relative;
     z-index: -1;
-    -webkit-overflow-scrolling: touch;
+    // -webkit-overflow-scrolling: touch;
 
     & img {
       width: 100%;
@@ -94,7 +94,6 @@ body {
     #foreground {
       animation: balloon 15s infinite linear;
       transform: translate(0);
-      transition: .1s;
     }
 
     .flicker-slow {

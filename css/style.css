@@ -100,7 +100,6 @@ body header {
   overflow: hidden;
   position: relative;
   z-index: -1;
-  -webkit-overflow-scrolling: touch;
 }
 
 body header img {
@@ -131,8 +130,6 @@ body header #foreground {
           animation: balloon 15s infinite linear;
   -webkit-transform: translate(0);
           transform: translate(0);
-  -webkit-transition: .1s;
-  transition: .1s;
 }
 
 body header .flicker-slow {
