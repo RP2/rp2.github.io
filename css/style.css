@@ -119,26 +119,6 @@ body header h1 {
   font-size: calc(1rem + 15vw);
 }
 
-body header #background {
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-}
-
-body header #middle {
-  -webkit-transform: translateZ(-1px) scale(2);
-          transform: translateZ(-1px) scale(2);
-}
-
-body header #title {
-  -webkit-transform: translateZ(-2px) scale(3);
-          transform: translateZ(-2px) scale(3);
-}
-
-body header #foreground {
-  -webkit-transform: translateZ(-3px) scale(4);
-          transform: translateZ(-3px) scale(4);
-}
-
 body header .flicker-slow {
   -webkit-animation: flicker 3s linear infinite;
           animation: flicker 3s linear infinite;

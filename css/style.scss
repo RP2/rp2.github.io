@@ -85,21 +85,21 @@ body {
       font-size: calc(1rem + 15vw);
     }
 
-    & #background {
-      transform: translateZ(0);
-    }
+    // & #background {
+    //   transform: translateZ(0);
+    // }
 
-    & #middle {
-      transform: translateZ(-1px) scale(2);
-    }
+    // & #middle {
+    //   transform: translateZ(0px) scale(2);
+    // }
 
-    & #title {
-      transform: translateZ(-2px) scale(3);
-    }
+    // & #title {
+    //   transform: translateZ(0px) scale(3);
+    // }
 
-    & #foreground {
-      transform: translateZ(-3px) scale(4);
-    }
+    // & #foreground {
+    //   transform: translateZ(0px) scale(4);
+    // }
 
     .flicker-slow {
       animation: flicker 3s linear infinite;
