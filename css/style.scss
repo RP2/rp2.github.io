@@ -313,9 +313,10 @@ body {
       margin: 0 25vw 0 3rem;
       display: flex;
       justify-content: center;
-      height: 50vh;
+      max-height: 50vh;
 
       & img {
+        object-fit: contain;
         max-width: 100%;
       }
     }
