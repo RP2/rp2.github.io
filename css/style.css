@@ -359,7 +359,7 @@ body main h3 {
 
 body main p {
   cursor: default;
-  margin: 2rem 0 1rem 3rem;
+  margin: 3rem 0 1rem 3rem;
 }
 
 body main .review {
@@ -392,8 +392,8 @@ body main .review .content {
 }
 
 body main .review .content:hover,
-body main .review .content:focus,
-body main .review .content:active {
+body main .review .content:active,
+body main .review .content:focus {
   -webkit-box-flex: 15;
       -ms-flex: 15;
           flex: 15;
@@ -460,6 +460,9 @@ body main #new-business-cards img {
 }
 
 body main #new-remp-web {
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -498,14 +501,22 @@ body main .paragraph a:focus {
   color: #191919;
 }
 
-body main #end-of-remp {
+body main .end-of-project {
   padding-bottom: 4rem;
   margin-bottom: 4rem;
   border-bottom: 1px solid #fff;
 }
 
-body #contact {
+body main .normal-picture {
   margin: 0 25vw 0 3rem;
+}
+
+body main .normal-picture img {
+  width: 100%;
+}
+
+body #contact {
+  margin: 4rem 25vw 1rem 3rem;
   min-height: 25vh;
 }
 

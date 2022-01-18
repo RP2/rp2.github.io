@@ -246,7 +246,7 @@ body {
 
     & p {
       cursor: default;
-      margin: 2rem 0 1rem 3rem;
+      margin: 3rem 0 1rem 3rem;
     }
 
     & .review {
@@ -270,8 +270,8 @@ body {
       }
 
       & .content:hover,
-      .content:focus,
-      .content:active {
+      .content:active,
+      .content:focus {
         flex: 15;
         filter: grayscale(.25);
       }
@@ -321,6 +321,7 @@ body {
     }
 
     & #new-remp-web {
+      min-height: fit-content;
       flex-direction: row;
 
       & .content {
@@ -355,15 +356,23 @@ body {
       }
     }
 
-    & #end-of-remp {
+    & .end-of-project {
       padding-bottom: 4rem;
       margin-bottom: 4rem;
       border-bottom: 1px solid #fff;
     }
+
+    & .normal-picture {
+      margin: 0 25vw 0 3rem;
+
+      & img {
+        width: 100%;
+      }
+    }
   }
 
   & #contact {
-    margin: 0 25vw 0 3rem;
+    margin: 4rem 25vw 1rem 3rem;
     min-height: 25vh;
 
     & a {
