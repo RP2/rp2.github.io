@@ -46,6 +46,7 @@ body {
         padding: .5rem;
         writing-mode: vertical-rl;
         text-orientation: sideways;
+        text-decoration: underline;
         transform: rotate(180deg);
         transition: all .25s ease;
       }
@@ -381,8 +382,12 @@ body {
   & #contact {
     margin: 4rem 25vw 1rem 3rem;
     min-height: 25vh;
+    display: flex;
+    flex-direction: column;
 
     & a {
+      text-decoration: underline;
+      margin-bottom: 1rem;
       transition: .25s;
     }
 

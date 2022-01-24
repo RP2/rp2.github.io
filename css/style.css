@@ -70,6 +70,7 @@ body nav #links a {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: sideways;
+  text-decoration: underline;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition: all .25s ease;
@@ -529,9 +530,18 @@ body main .normal-picture img {
 body #contact {
   margin: 4rem 25vw 1rem 3rem;
   min-height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body #contact a {
+  text-decoration: underline;
+  margin-bottom: 1rem;
   -webkit-transition: .25s;
   transition: .25s;
 }
