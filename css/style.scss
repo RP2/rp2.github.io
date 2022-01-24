@@ -284,17 +284,23 @@ body {
       justify-content: center;
       background-color: #fff;
       transition: all .5s ease;
-      filter: grayscale(.75);
 
       & img {
         max-width: 100%;
       }
     }
 
-    & #old-logo:hover,
-    #old-logo:active,
-    #old-logo:focus {
-      filter: grayscale(.25);
+    & .analysis {
+      max-height: 50vh;
+      margin: 0 25vw 0 3rem;
+      padding: 1rem 1rem 1rem 1rem;
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
+      transition: all .5s ease;
+      & img {
+        max-width: 100%;
+      }
     }
 
     & #new-logo {

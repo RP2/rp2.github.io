@@ -412,19 +412,29 @@ body main #old-logo {
   background-color: #fff;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  -webkit-filter: grayscale(0.75);
-          filter: grayscale(0.75);
 }
 
 body main #old-logo img {
   max-width: 100%;
 }
 
-body main #old-logo:hover,
-body main #old-logo:active,
-body main #old-logo:focus {
-  -webkit-filter: grayscale(0.25);
-          filter: grayscale(0.25);
+body main .analysis {
+  max-height: 50vh;
+  margin: 0 25vw 0 3rem;
+  padding: 1rem 1rem 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+body main .analysis img {
+  max-width: 100%;
 }
 
 body main #new-logo {
