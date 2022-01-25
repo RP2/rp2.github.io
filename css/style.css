@@ -501,6 +501,17 @@ body main .paragraph p {
   margin: 0;
 }
 
+body main .paragraph p img {
+  height: 1.5rem;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+body main .paragraph p img:hover, body main .paragraph p img:active, body main .paragraph p img:focus {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+}
+
 body main .paragraph a {
   text-decoration: underline;
   -webkit-transition: .25s;
