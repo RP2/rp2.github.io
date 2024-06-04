@@ -1,277 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="keywords"
+            content="riley, website, design, graphic, frontend, developer, bay area, english, freelance" />
+        <meta
+            name="description"
+            content="A jack of all trades is a master of none, but better than a master of one - Freelance web design & developer." />
+        <meta
+            property="og:image"
+            itemprop="image primaryImageOfPage"
+            content="./images/main/Self2.png" />
+        <meta property="og:site_name" content="Riley's Portfolio" />
+        <meta property="og:url" content="https://2briley.com/" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="./css/reset.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="./css/style.css" />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+        <link
+            rel="icon"
+            sizes="any"
+            type="image/svg+xml/x-icon"
+            href="./images/main/Self2.png" />
+        <title>Riley's Portfolio | Web & Design</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="riley, website, design, graphic, frontend, developer, bay area, english, freelance">
-    <meta name="description"
-        content="A jack of all trades is a master of none, but better than a master of one - Freelance web design & developer.">
-    <meta property="og:image" itemprop="image primaryImageOfPage" content="./images/main/Self2.png" />
-    <meta property="og:site_name" content="Riley's Portfolio">
-    <meta property="og:url" content="https://2briley.com/">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/reset.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="icon" sizes="any" type="image/svg+xml/x-icon" href="./images/main/Self2.png">
-    <title>Riley's Portfolio | Web & Design</title>
-</head>
-
-<body>
-    <nav>
-        <div id="logo">
-            <a href="#landing"><img alt="my-logo" src="./images/main/Self2.png" /></a>
-        </div>
-        <div id="links">
-            <a href="#about">ABOUT</a>
-            <a href="#work">WORK</a>
-            <a href="#contact">CONTACT</a>
-        </div>
-    </nav>
-    <header id="landing">
-        <img alt="back" id="background" src="./images/main/hans-eiskonen-background.jpg" />
-        <img alt="middle" id="middle" src="./images/main/hans-eiskonen-mid.png" />
-        <h1 id="title"><span class="flicker-slow">K</span>EEP IT SIMP<span class="flicker-fast">L</span>E.</h1>
-        <img alt="foreground" id="foreground" src="./images/main/hans-eiskonen-front.png" />
-    </header>
-    <section id="about">
-        <h2><span id="riley">Riley</span> is an independent visual designer, developer, and project manager based in
-            the <span id="bay-area">San Francisco Bay Area.</span></h2>
-        <h2>In simple terms - I can run an agency alone, or make yours that much better.</h2>
-        <video id="about-video" autoplay muted loop>
-            <source src="./images/main/sf.mp4" type="video/mp4">
-        </video>
-    </section>
-    <main id="work">
-        <h3>REMP</h3>
-        <p>BEFORE - OLD LOGO</p>
-        <div id="old-logo">
-            <img alt="re&m-old-logo" src="./images/work/remp-web/old-remp-logo.jpg" />
-        </div>
-        <div class="paragraph">
-            <p>The <span>old logo</span> also had some issues, primarily it needed to be updated to accommodate the new
-                partner. There were also visual inconsistencies with the old design, the spacing and sizes of the boxes
-                were not even and nobody was a fan of the color choices. The "&" was overpowering the other letters and
-                the subtext under the main body was lost when printed small. There were a lot of revisions when coming
-                to the final logo design, but I believe the final design solves previously mentioned issues as well as
-                positions the brand more in line with how the firm conducts itself.</p>
-        </div>
-        <p>BEFORE - OLD WEBSITE</p>
-        <div class="review">
-            <div class="content" id="remp1" style="--i: url(../images/work/remp-web/REMP_web_review_001.jpeg)"></div>
-            <div class="content" id="remp2" style="--i: url(../images/work/remp-web/REMP_web_review_002.jpeg)"></div>
-            <div class="content" id="remp3" style="--i: url(../images/work/remp-web/REMP_web_review_003.jpeg)"></div>
-            <div class="content" id="remp4" style="--i: url(../images/work/remp-web/REMP_web_review_004.jpeg)"></div>
-            <div class="content" id="remp5" style="--i: url(../images/work/remp-web/REMP_web_review_005.jpeg)"></div>
-        </div>
-        <div class="paragraph">
-            <p>Review of the <span>old website</span> revealed there were a lot of issues that needed to be addressed.
-                First off the website had not been touched in the last 10+ years, meaning a lot of design choices did
-                not age gracefully. Some mentionable choices are large bodies of text, drop down menus, and pages only
-                containing one paragraph. Along with many design and functional issues, a 3rd party was managing the
-                site which only complicated things more. The combination of these issues made it obvious that the
-                website needed to be rebuilt and be kept completely internal. The new website was completely designed
-                and coded by myself and I believe it addresses all of the concerns with the old site as well as give a
-                better sense of what the client stands for.</p>
-        </div>
-        <p>COMPETITIVE ANALYSIS</p>
-        <div class="analysis">
-            <img alt="competitive analysis" src="./images/work/remp-web/analysis.svg" />
-        </div>
-        <div class="paragraph">
-            <p>Before I dove into <span>redesigning</span> the brand and how it would extend across all marketing touch
-                points. I felt it was important to get an understanding of the competitive landscape by focusing on the
-                California competitive set. I then aggregated their styles and plotted them in a magic quadrant grid
-                that held two ranges - Inclusive to Exclusive, and Futuristic to Traditional. I noticed that many firms
-                had moved their branding to be more futuristic and soaked in blue, which makes
-                sense considering the affinity of blue tones in Tech, the Bay Area's source of uncommon wealth.
-                The top right quadrant which covered Futuristic and Exclusive seemed unpopulated, and frankly, meshed
-                well with my client's positioning in the market where they do no advertising, no outreach, and only take
-                on new clients through personal referrals.
+    <body>
+        <modal
+            style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+            ">
+            <div
+                style="
+                    border-radius: 4px;
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    background-color: black;
+                    max-width: 25em;
+                    max-height: 5em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                ">
+                <p
+                    id="close"
+                    style="
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        margin: 1em;
+                        font-size: 0.5em;
+                        cursor: pointer;
+                    ">
+                    close
+                </p>
+                <p>
+                    I have moved to
+                    <a
+                        style="text-decoration: underline; color: rgb(255 81 1)"
+                        href="https://rileyperalta.com/"
+                        >rileyperalta.com</a
+                    >
+                </p>
+            </div>
+        </modal>
+        <nav>
+            <div id="logo">
+                <a href="#landing"
+                    ><img alt="my-logo" src="./images/main/Self2.png"
+                /></a>
+            </div>
+            <div id="links">
+                <a href="#about">ABOUT</a>
+                <a href="#work">WORK</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </nav>
+        <header id="landing">
+            <img
+                alt="back"
+                id="background"
+                src="./images/main/hans-eiskonen-background.jpg" />
+            <img
+                alt="middle"
+                id="middle"
+                src="./images/main/hans-eiskonen-mid.png" />
+            <h1 id="title">
+                <span class="flicker-slow">K</span>EEP IT SIMP<span
+                    class="flicker-fast"
+                    >L</span
+                >E.
+            </h1>
+            <img
+                alt="foreground"
+                id="foreground"
+                src="./images/main/hans-eiskonen-front.png" />
+        </header>
+        <section id="about">
+            <h2>
+                <span id="riley">Riley</span> is an independent visual designer,
+                developer, and project manager based in the
+                <span id="bay-area">San Francisco Bay Area.</span>
+            </h2>
+            <h2>
+                In simple terms - I can run an agency alone, or make yours that
+                much better.
+            </h2>
+            <video id="about-video" autoplay muted loop>
+                <source src="./images/main/sf.mp4" type="video/mp4" />
+            </video>
+        </section>
+        <main id="work">
+            <h3>REMP</h3>
+            <p>BEFORE - OLD LOGO</p>
+            <div id="old-logo">
+                <img
+                    alt="re&m-old-logo"
+                    src="./images/work/remp-web/old-remp-logo.jpg" />
+            </div>
+            <div class="paragraph">
+                <p>
+                    The <span>old logo</span> also had some issues, primarily it
+                    needed to be updated to accommodate the new partner. There
+                    were also visual inconsistencies with the old design, the
+                    spacing and sizes of the boxes were not even and nobody was
+                    a fan of the color choices. The "&" was overpowering the
+                    other letters and the subtext under the main body was lost
+                    when printed small. There were a lot of revisions when
+                    coming to the final logo design, but I believe the final
+                    design solves previously mentioned issues as well as
+                    positions the brand more in line with how the firm conducts
+                    itself.
+                </p>
+            </div>
+            <p>BEFORE - OLD WEBSITE</p>
+            <div class="review">
+                <div
+                    class="content"
+                    id="remp1"
+                    style="
+                        --i: url(../images/work/remp-web/REMP_web_review_001.jpeg);
+                    "></div>
+                <div
+                    class="content"
+                    id="remp2"
+                    style="
+                        --i: url(../images/work/remp-web/REMP_web_review_002.jpeg);
+                    "></div>
+                <div
+                    class="content"
+                    id="remp3"
+                    style="
+                        --i: url(../images/work/remp-web/REMP_web_review_003.jpeg);
+                    "></div>
+                <div
+                    class="content"
+                    id="remp4"
+                    style="
+                        --i: url(../images/work/remp-web/REMP_web_review_004.jpeg);
+                    "></div>
+                <div
+                    class="content"
+                    id="remp5"
+                    style="
+                        --i: url(../images/work/remp-web/REMP_web_review_005.jpeg);
+                    "></div>
+            </div>
+            <div class="paragraph">
+                <p>
+                    Review of the <span>old website</span> revealed there were a
+                    lot of issues that needed to be addressed. First off the
+                    website had not been touched in the last 10+ years, meaning
+                    a lot of design choices did not age gracefully. Some
+                    mentionable choices are large bodies of text, drop down
+                    menus, and pages only containing one paragraph. Along with
+                    many design and functional issues, a 3rd party was managing
+                    the site which only complicated things more. The combination
+                    of these issues made it obvious that the website needed to
+                    be rebuilt and be kept completely internal. The new website
+                    was completely designed and coded by myself and I believe it
+                    addresses all of the concerns with the old site as well as
+                    give a better sense of what the client stands for.
+                </p>
+            </div>
+            <p>COMPETITIVE ANALYSIS</p>
+            <div class="analysis">
+                <img
+                    alt="competitive analysis"
+                    src="./images/work/remp-web/analysis.svg" />
+            </div>
+            <div class="paragraph">
+                <p>
+                    Before I dove into <span>redesigning</span> the brand and
+                    how it would extend across all marketing touch points. I
+                    felt it was important to get an understanding of the
+                    competitive landscape by focusing on the California
+                    competitive set. I then aggregated their styles and plotted
+                    them in a magic quadrant grid that held two ranges -
+                    Inclusive to Exclusive, and Futuristic to Traditional. I
+                    noticed that many firms had moved their branding to be more
+                    futuristic and soaked in blue, which makes sense considering
+                    the affinity of blue tones in Tech, the Bay Area's source of
+                    uncommon wealth. The top right quadrant which covered
+                    Futuristic and Exclusive seemed unpopulated, and frankly,
+                    meshed well with my client's positioning in the market where
+                    they do no advertising, no outreach, and only take on new
+                    clients through personal referrals.
+                </p>
+            </div>
+            <p>LOGO DESIGN VARIATION</p>
+            <div class="analysis">
+                <img
+                    alt="logo comparisons"
+                    src="./images/work/remp-web/logos.svg" />
+            </div>
+            <div class="paragraph">
+                <p>
+                    Obviously the <span>new logo</span> would not be completed
+                    in a single go, there was a lot of iteration. Pictured above
+                    are just a few of the different designs I presented to the
+                    client during which I would explain my thinking and
+                    reference the research I conducted. The same process was
+                    also done to the font type which was used as a starting
+                    point for these logos.
+                </p>
+            </div>
+            <p>AFTER - NEW LOGO</p>
+            <div id="new-logo">
+                <img
+                    alt="new-remp-logo"
+                    src="./images/work/remp-web/new-remp-logo.svg" />
+            </div>
+            <div class="paragraph">
+                <p>
+                    The <span>new logo</span> I feel captures the energy the
+                    firm has in a more accurate way than previous designs. This
+                    design was one of the dozen of iterations that I created,
+                    but was the one that did the best in every scale and
+                    context. Not only does it excel in a printed format such as
+                    a business card or letterhead, it also holds up on desktop
+                    and mobile websites. I wanted to get rid of distracting
+                    design devices such as the "&", squares, and subtext that
+                    disappears when scaled down. The logo and branding should
+                    reflect the company and I believe a strong, confident, clean
+                    logo with a clear message in this case was the best choice.
+                    This also allowed for more customization for the partners,
+                    with the logo as a neutral color, this allows each partner
+                    to have their own identity within the firm; this can be seen
+                    on the new website as well as business cards.
+                </p>
+            </div>
+            <p>AFTER - NEW BUSINESS CARDS</p>
+            <div id="new-business-cards">
+                <img
+                    alt="business cards"
+                    src="./images/work/remp-web/spinning-card.gif" />
+            </div>
+            <div class="normal-picture">
+                <img
+                    alt="logo comparisons"
+                    src="./images/work/remp-web/card-backs.svg" />
+            </div>
+            <p>AFTER - NEW WEBSITE</p>
+            <div id="new-remp-web" class="review">
+                <div
+                    class="content"
+                    id="remp1"
+                    style="
+                        --i: url(../images/work/remp-web/new-remp-web1.png);
+                    "></div>
+                <div
+                    class="content"
+                    id="remp2"
+                    style="
+                        --i: url(../images/work/remp-web/new-remp-web2.png);
+                    "></div>
+                <div
+                    class="content"
+                    id="remp3"
+                    style="
+                        --i: url(../images/work/remp-web/new-remp-web3.png);
+                    "></div>
+            </div>
+            <div class="paragraph end-of-project">
+                <p>
+                    With the <span>new website</span> I wanted to continue with
+                    the style the logo had, simple and strong. I kept the colors
+                    to a minimum, white with each of the partner's unique color.
+                    While scrolling the site, the background will change
+                    according to each partner's color. This theme also carries
+                    over to the print media and especially with the customized
+                    business cards. I could keep talking about why I made
+                    certain decisions, but I think it would make more sense to
+                    just see the site first hand. The project can be found at
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.rempadvisors.com/"
+                        >rempadvisors.com</a
+                    >
+                    and the source code is on my
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://github.com/RP2/remp"
+                        >github</a
+                    >.
+                </p>
+            </div>
+            <h3>ROGUE ID</h3>
+            <p>NEW WEBSITE</p>
+            <div class="normal-picture">
+                <img alt="rogue id" src="./images/work/rogue/rogue.png" />
+            </div>
+            <div class="paragraph">
+                <p>
+                    I was lucky enough to have the opportunity to build Rogue
+                    id's <span>new website</span> and brand identity. You can
+                    see the website at
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://rogueid.com/"
+                        >rogueid.com</a
+                    >
+                    and the source code is on my github as usual.
+                </p>
+            </div>
+            <p>NEW LOGO</p>
+            <div class="normal-picture">
+                <img
+                    alt="rogue logo"
+                    src="./images/work/rogue/RogueID-logo.png" />
+            </div>
+            <div class="paragraph">
+                <p>
+                    The new logo design was based off ancient Roman lettering.
+                    The
+                    <img
+                        alt="roman r"
+                        src="./images/work/rogue/originalR.png" />
+                    in particular was designed completely on my own with
+                    inspiration originating from old Roman carvings; this was
+                    paired with the font Trajan Pro.
+                </p>
+            </div>
+            <p>NEW BUSINESS CARD</p>
+            <div id="new-business-cards">
+                <img
+                    alt="business cards"
+                    src="./images/work/rogue/rogue-card.gif" />
+            </div>
+            <p>CUSTOM SHIRT DESIGN</p>
+            <div class="normal-picture">
+                <img
+                    alt="rogue shirt"
+                    src="./images/work/rogue/rogue-shirts.jpg" />
+            </div>
+            <div class="paragraph">
+                <p>
+                    Using the new logo I designed, company shirts were made to
+                    use as swag.
+                </p>
+            </div>
+            <p>ANIMATED MEDIA</p>
+            <div class="normal-picture">
+                <img
+                    alt="brand focus gif"
+                    src="./images/work/rogue/brandfocus.gif" />
+            </div>
+            <div class="paragraph end-of-project">
+                <p>
+                    I also got the chance to work on pitch decks and animated
+                    media for client meetings and pitches.
+                </p>
+            </div>
+            <h3>Primo Angeli</h3>
+            <p>ARCHIVE WEBSITE</p>
+            <div class="normal-picture">
+                <img alt="primo angeli" src="./images/work/primo/1.png" />
+            </div>
+            <div class="paragraph end-of-project">
+                <p>
+                    <span>Primo Angeli</span>, who sadly recently passed, was
+                    someone I met as a small child and was tremendously
+                    influential on my belief in the possibility of a creative
+                    career. His work and worldview inspired me and countless
+                    other art school students to pursue design. After graduating
+                    from university I was fortunate to be able to work with him
+                    and his team on his retrospective website located at
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.primoangeli.com/"
+                        >primoangeli.com</a
+                    >.
+                </p>
+            </div>
+            <h3>Mulder Design</h3>
+            <p>PORTFOLIO WEBSITE</p>
+            <div class="normal-picture">
+                <img
+                    alt="primo angeli"
+                    src="./images/work/mulder_design/1.png" />
+            </div>
+            <div class="paragraph end-of-project">
+                <p>
+                    I got the opportunity to work along side
+                    <span>Oscar Mulder</span> who has an impressive background
+                    in package design and logo design. He also now runs a
+                    children's toy company focusing on promoting healthy
+                    activities. I was able to not only build his portfolio
+                    website but also help with the e-commerce side of his toy
+                    company. You can check out his portfolio website at
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="http://mulderdesign.com/"
+                        >mulderdesign.com</a
+                    >.
+                </p>
+            </div>
+            <h3>Stapley Hildebrand</h3>
+            <p>AGENCY WEBSITE</p>
+            <div class="normal-picture">
+                <img alt="primo angeli" src="./images/work/shred/1.png" />
+            </div>
+            <div class="paragraph end-of-project">
+                <p>
+                    Soon after graduating college and completing a Web
+                    Development immersive in San Francisco, I got the
+                    opportunity to intern at
+                    <span>Stapley Hildebrand</span> which is a package design
+                    agency. I completely redesigned their previous website which
+                    was built using SquareSpace to something that I thought
+                    reflected their style and attitude more accurately. Since
+                    then, the site has gotten some updates while, in my opinion,
+                    preserving the energy I instilled in the original design.
+                    You can check out their website at
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.shredsf.com/"
+                        >shredsf.com</a
+                    >.
+                </p>
+            </div>
+            <h3>Illustration & Video</h3>
+            <p>ANIMATED GIFS</p>
+            <div class="normal-picture">
+                <img alt="anime drawing" src="./images/work/gifs/1.gif" />
+            </div>
+            <p>GIF 2</p>
+            <div class="normal-picture">
+                <img alt="anime drawing" src="./images/work/gifs/2.gif" />
+            </div>
+            <p>GIF 3</p>
+            <div class="normal-picture">
+                <img alt="anime drawing" src="./images/work/gifs/3.gif" />
+            </div>
+            <p>GIF 4</p>
+            <div class="normal-picture">
+                <img alt="anime drawing" src="./images/work/gifs/4.gif" />
+            </div>
+            <p>GIF 5</p>
+            <div class="normal-picture">
+                <img alt="anime drawing" src="./images/work/gifs/5.gif" />
+            </div>
+            <p>GIF 6</p>
+            <div class="normal-picture">
+                <img alt="anime drawing" src="./images/work/gifs/6.gif" />
+            </div>
+            <div class="paragraph end-of-project">
+                <p>
+                    Series of quick animated gifs consisting of illustrations,
+                    video, and effects created completely from scratch using
+                    Adobe After Effects and Photoshop.
+                </p>
+            </div>
+            <h3>Memory Game VR</h3>
+            <p>STREET VIEW</p>
+            <div class="normal-picture">
+                <img
+                    alt="memory game vr"
+                    src="./images/work/memory_game/mg1.jpg" />
+            </div>
+            <p>AERIAL VIEW</p>
+            <div class="normal-picture">
+                <img
+                    alt="memory game vr"
+                    src="./images/work/memory_game/mg2.jpg" />
+            </div>
+            <p>STREET VIEW</p>
+            <div class="normal-picture">
+                <img
+                    alt="memory game logo"
+                    src="./images/work/memory_game/mg3.jpg" />
+            </div>
+            <div class="paragraph end-of-project">
+                <p>
+                    For my college capstone project, I worked with a small team
+                    of students and developers to build a Virtual Reality
+                    experience aimed to assist individuals in the early stages
+                    of alzheimer's. We worked alongside a local care center in
+                    Berkeley to get feedback from the staff. This game also
+                    earned a few awards, the most notable was the Gold Stevie
+                    Award.
+                </p>
+            </div>
+        </main>
+        <footer id="contact">
+            <p>
+                You can reach me via email at
+                <a href="mailto:im@2briley.com">im@2briley.com</a> or
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/rileyperalta/"
+                    >LinkedIn</a
+                >.
             </p>
-        </div>
-        <p>LOGO DESIGN VARIATION</p>
-        <div class="analysis">
-            <img alt="logo comparisons" src="./images/work/remp-web/logos.svg" />
-        </div>
-        <div class="paragraph">
-            <p>Obviously the <span>new logo</span> would not be completed in a single go, there was a lot of iteration.
-                Pictured above are just a few of the different designs I presented to the client during which I would
-                explain my thinking and reference the research I conducted. The same process was also done to the font
-                type which was used as a starting point for these logos.</p>
-        </div>
-        <p>AFTER - NEW LOGO</p>
-        <div id="new-logo">
-            <img alt="new-remp-logo" src="./images/work/remp-web/new-remp-logo.svg" />
-        </div>
-        <div class="paragraph">
-            <p>The <span>new logo</span> I feel captures the energy the firm has in a more accurate way than previous
-                designs. This design was one of the dozen of iterations that I created, but was the one that did the
-                best in every scale and context. Not only does it excel in a printed format such as a business card or
-                letterhead, it also holds up on desktop and mobile websites. I wanted to get rid of distracting design
-                devices such as the "&", squares, and subtext that disappears when scaled down. The logo and branding
-                should reflect the company and I believe a strong, confident, clean logo with a clear message in this
-                case was the best choice. This also allowed for more customization for the partners, with the logo as a
-                neutral color, this allows each partner to have their own identity within the firm; this can be seen on
-                the new website as well as business cards.</p>
-        </div>
-        <p>AFTER - NEW BUSINESS CARDS</p>
-        <div id="new-business-cards">
-            <img alt="business cards" src="./images/work/remp-web/spinning-card.gif" />
-        </div>
-        <div class="normal-picture">
-            <img alt="logo comparisons" src="./images/work/remp-web/card-backs.svg" />
-        </div>
-        <p>AFTER - NEW WEBSITE</p>
-        <div id="new-remp-web" class="review">
-            <div class="content" id="remp1" style="--i: url(../images/work/remp-web/new-remp-web1.png)"></div>
-            <div class="content" id="remp2" style="--i: url(../images/work/remp-web/new-remp-web2.png)"></div>
-            <div class="content" id="remp3" style="--i: url(../images/work/remp-web/new-remp-web3.png)"></div>
-        </div>
-        <div class="paragraph end-of-project">
-            <p>With the <span>new website</span> I wanted to continue with the style the logo had, simple and strong. I
-                kept the colors to a minimum, white with each of the partner's unique color. While scrolling the site,
-                the background will change according to each partner's color. This theme also carries
-                over to the print media and especially with the customized business cards. I could keep talking about
-                why I made certain decisions, but I think it would make more sense to just see the site first hand. The
-                project can be found at <a target="_blank" rel="noopener noreferrer"
-                    href="https://www.rempadvisors.com/">rempadvisors.com</a> and the source code is on my <a
-                    target="_blank" rel="noopener noreferrer" href="https://github.com/RP2/remp">github</a>.</p>
-        </div>
-        <h3>ROGUE ID</h3>
-        <p>NEW WEBSITE</p>
-        <div class="normal-picture">
-            <img alt="rogue id" src="./images/work/rogue/rogue.png" />
-        </div>
-        <div class="paragraph">
-            <p>I was lucky enough to have the opportunity to build Rogue id's <span>new website</span> and brand
-                identity. You can see the website at <a target="_blank" rel="noopener noreferrer"
-                    href="https://rogueid.com/">rogueid.com</a> and the source code is on my github as usual.</p>
-        </div>
-        <P>NEW LOGO</P>
-        <div class="normal-picture">
-            <img alt="rogue logo" src="./images/work/rogue/RogueID-logo.png" />
-        </div>
-        <div class="paragraph">
-            <p>The new logo design was based off ancient Roman lettering. The <img alt="roman r"
-                    src="./images/work/rogue/originalR.png" /> in particular was designed
-                completely on my own with inspiration originating from old Roman carvings; this was paired with the font
-                Trajan Pro.</p>
-        </div>
-        <p>NEW BUSINESS CARD</p>
-        <div id="new-business-cards">
-            <img alt="business cards" src="./images/work/rogue/rogue-card.gif" />
-        </div>
-        <p>CUSTOM SHIRT DESIGN</p>
-        <div class="normal-picture">
-            <img alt="rogue shirt" src="./images/work/rogue/rogue-shirts.jpg" />
-        </div>
-        <div class="paragraph">
-            <p>Using the new logo I designed, company shirts were made to use as swag.</p>
-        </div>
-        <p>ANIMATED MEDIA</p>
-        <div class="normal-picture">
-            <img alt="brand focus gif" src="./images/work/rogue/brandfocus.gif" />
-        </div>
-        <div class="paragraph end-of-project">
-            <p>I also got the chance to work on pitch decks and animated media for client meetings and pitches.</p>
-        </div>
-        <h3>Primo Angeli</h3>
-        <p>ARCHIVE WEBSITE</p>
-        <div class="normal-picture">
-            <img alt="primo angeli" src="./images/work/primo/1.png" />
-        </div>
-        <div class="paragraph end-of-project">
-            <p><span>Primo Angeli</span>, who sadly recently passed, was someone I met as a small child and was
-                tremendously influential on my belief in the possibility of a creative career. His work and worldview
-                inspired me and countless other art school students to pursue design. After graduating from university I
-                was fortunate to be able to work with him and his team on his retrospective website located at <a
-                    target="_blank" rel="noopener noreferrer" href="https://www.primoangeli.com/">primoangeli.com</a>.
-            </p>
-        </div>
-        <h3>Mulder Design</h3>
-        <p>PORTFOLIO WEBSITE</p>
-        <div class="normal-picture">
-            <img alt="primo angeli" src="./images/work/mulder_design/1.png" />
-        </div>
-        <div class="paragraph end-of-project">
-            <p>I got the opportunity to work along side <span>Oscar Mulder</span> who has an impressive background in
-                package design and logo design. He also now runs a children's toy company focusing on promoting healthy
-                activities. I was able to not only build his portfolio website but also help with the e-commerce side of
-                his toy company. You can check out his portfolio website at <a target="_blank" rel="noopener noreferrer"
-                    href="http://mulderdesign.com/">mulderdesign.com</a>.</p>
-        </div>
-        <h3>Stapley Hildebrand</h3>
-        <p>AGENCY WEBSITE</p>
-        <div class="normal-picture">
-            <img alt="primo angeli" src="./images/work/shred/1.png" />
-        </div>
-        <div class="paragraph end-of-project">
-            <p>Soon after graduating college and completing a Web Development immersive in San Francisco, I got the
-                opportunity to intern at <span>Stapley Hildebrand</span> which is a package design agency. I completely
-                redesigned their previous website which was built using SquareSpace to something that I thought
-                reflected their style and attitude more accurately. Since then, the site has gotten some updates while,
-                in my opinion, preserving the energy I instilled in the original design. You can check out their website
-                at <a target="_blank" rel="noopener noreferrer" href="https://www.shredsf.com/">shredsf.com</a>.</p>
-        </div>
-        <h3>Illustration & Video</h3>
-        <p>ANIMATED GIFS</p>
-        <div class="normal-picture">
-            <img alt="anime drawing" src="./images/work/gifs/1.gif" />
-        </div>
-        <p>GIF 2</p>
-        <div class="normal-picture">
-            <img alt="anime drawing" src="./images/work/gifs/2.gif" />
-        </div>
-        <p>GIF 3</p>
-        <div class="normal-picture">
-            <img alt="anime drawing" src="./images/work/gifs/3.gif" />
-        </div>
-        <p>GIF 4</p>
-        <div class="normal-picture">
-            <img alt="anime drawing" src="./images/work/gifs/4.gif" />
-        </div>
-        <p>GIF 5</p>
-        <div class="normal-picture">
-            <img alt="anime drawing" src="./images/work/gifs/5.gif" />
-        </div>
-        <p>GIF 6</p>
-        <div class="normal-picture">
-            <img alt="anime drawing" src="./images/work/gifs/6.gif" />
-        </div>
-        <div class="paragraph end-of-project">
-            <p>Series of quick animated gifs consisting of illustrations, video, and effects created completely from
-                scratch using Adobe After Effects and Photoshop.</p>
-        </div>
-        <h3>Memory Game VR</h3>
-        <p>STREET VIEW</p>
-        <div class="normal-picture">
-            <img alt="memory game vr" src="./images/work/memory_game/mg1.jpg" />
-        </div>
-        <p>AERIAL VIEW</p>
-        <div class="normal-picture">
-            <img alt="memory game vr" src="./images/work/memory_game/mg2.jpg" />
-        </div>
-        <p>STREET VIEW</p>
-        <div class="normal-picture">
-            <img alt="memory game logo" src="./images/work/memory_game/mg3.jpg" />
-        </div>
-        <div class="paragraph end-of-project">
-            <p>For my college capstone project, I worked with a small team of students and developers to build a Virtual
-                Reality experience aimed to assist individuals in the early stages of alzheimer's. We worked alongside
-                a local care center in Berkeley to get feedback from the staff. This game also earned a few awards, the most
-                notable was the Gold Stevie Award.</p>
-        </div>
-    </main>
-    <footer id="contact">
-        <p>You can reach me via email at <a href="mailto:im@2briley.com">im@2briley.com</a> or <a target="_blank"
-                rel="noopener noreferrer" href="https://www.linkedin.com/in/rileyperalta/">LinkedIn</a>.
-        </p>
-    </footer>
-    <script type="text/javascript" src="./scripts/main.js"></script>
-</body>
-
+        </footer>
+        <script type="text/javascript" src="./scripts/main.js"></script>
+    </body>
 </html>
